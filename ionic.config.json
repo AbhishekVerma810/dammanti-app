@@ -1,0 +1,7 @@
+{
+  "name": "dammantiapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
