@@ -1,0 +1,157 @@
+ion-content{
+    ion-item{
+        ion-title{
+            font-size: 25px;
+            font-weight:400;
+            line-height: 30px;
+
+        }
+        ion-buttons{
+            ion-button{
+            ion-icon{
+                font-size: 23px;
+            }
+        }
+        }
+        
+    }
+    ion-item {
+        ion-note{
+          font-weight: 500;
+          font-size: 14px;
+          color: #1B6DDF;
+
+          margin-right: 8px;
+        }
+      }
+  ion-card {
+    margin: 0;
+    box-shadow: none;
+    background: #ffffff;
+  
+    ion-card-content {
+      padding: 16px;
+    }
+  
+
+    ion-img {
+      max-height: 200px;
+      object-fit: contain;
+      background: #f4f5f8;
+      border-radius: 8px;
+    }
+  
+    ion-text {
+      display: block;
+      font-size: 14px;
+      color: var(--ion-color-medium);
+      margin-top: 8px;
+      text-align: center;
+    }
+  }
+  
+  ion-item {
+    --padding-start: 16px;
+    --padding-end: 16px;
+    --min-height: 48px;
+    --background: #ffffff;
+  
+    ion-label {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--ion-color-dark);
+    }
+  
+    ion-text {
+      font-size: 14px;
+      color: var(--ion-color-medium);
+      text-align: right;
+    }
+  
+    ion-icon[slot="end"] {
+      color: var(--ion-color-medium);
+      font-size: 20px;
+    }
+  
+    &[button] {
+      --detail-icon-color: var(--ion-color-medium);
+      --detail-icon-opacity: 1;
+    }
+  }
+  
+  ion-item-divider {
+    min-height: 1px;
+    --padding-start: 16px;
+    --padding-end: 16px;
+    --background: #e0e0e0;
+  }
+  
+  .shop-location {
+    --inner-padding-end: 0;
+  
+    ion-icon {
+      font-size: 24px;
+      margin-right: 16px;
+    }
+  }
+  .reminder_data{
+    margin-left: 20px;
+    height: 91px;
+    line-height: 0px;
+    padding-top: 15px;
+    margin-left: 20px;
+    span{
+     color:#686D9A;
+     ;
+     font-size: 13px;
+     line-height: 10px;
+    }
+    p{
+       color: #565B7D;
+       font-size: 16px;
+
+    }
+    .Manage-Reminder{
+        color: #1B6DDF;
+        font-size: 16px;
+
+        ion-icon{
+          align-items: center;
+          text-align: center;
+          font-size: 16px;
+          padding-top: 5px;
+        }
+    }
+ 
+  }
+  .notes{
+    margin-left: 20px;
+    height: 66px;
+    line-height: 0px;
+    padding-top: 15px;
+    margin-left: 20px;
+    span{
+     color:#686D9A;
+     ;
+     font-size: 13px;
+     line-height: 10px;
+    }
+    p{
+       color: #565B7D;
+       font-size: 16px;
+
+    }
+  }
+  .shope_location{
+    margin-bottom: 70px;
+    font-size: 16px;
+    line-height: 19.41px;
+    color: #1B6DDF;
+    margin-top: 10px;
+    margin-left: 20px;
+    ion-icon{
+        font-size: 20px;
+    }
+  }
+}
+  

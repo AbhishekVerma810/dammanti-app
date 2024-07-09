@@ -1,0 +1,88 @@
+<ion-content >
+  <swiper-container [options]="swiperConfig" class="swiper-container">
+    <swiper-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-img loading="lazy" alt="" src="assets/frame-9@2x.png"></ion-img>
+          </ion-col>
+          <ion-col>
+            <ion-img loading="lazy" alt="" src="assets/frame-10@2x.png"></ion-img>
+          </ion-col>
+          <ion-col>
+            <ion-img loading="lazy" alt="" src="assets/frame-11@2x.png"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </swiper-slide>
+  </swiper-container>
+
+  <div class="swiper-container-wrapper">
+    <h1 class="swiper-heading">DAMMANATI</h1>
+    <h6 class="swiper-paragraph">THE WARRANTY KEEPER</h6>
+    <swiper-container [options]="swiperConfig">
+      <swiper-slide>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-img loading="lazy" alt="" src="assets/frame-8-1@2x.png"></ion-img>
+            </ion-col>
+            <ion-col>
+              <ion-img loading="lazy" alt="" src="assets/frame-11-1@2x.png"></ion-img>
+            </ion-col>
+            <ion-col>
+              <ion-img loading="lazy" alt="" src="assets/frame-10-1@2x.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </swiper-slide>
+      
+    </swiper-container>
+  </div>
+
+  <swiper-container [options]="swiperConfig">
+    <swiper-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-img loading="lazy" alt="" src="assets/frame-8-2@2x.png"></ion-img>
+          </ion-col>
+          <ion-col>
+            <ion-img loading="lazy" alt="" src="assets/frame-9-2@2x.png"></ion-img>
+          </ion-col>
+          <ion-col>
+            <ion-img loading="lazy" alt="" src="assets/frame-10-2@2x.png"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </swiper-slide>
+  </swiper-container>
+
+  <ion-grid class="ion-text-center ion-margin-top">
+    <ion-row>
+      <ion-col>
+        <h1>Welcome</h1>
+        <p>{{ displayText }}<ng-container *ngIf="!showFullText">...</ng-container></p>
+        <ion-button fill="clear" class="ion-align-items-center ion-no-ripple" class="more-button"
+          (click)="toggleText()">
+          <span>{{ showFullText ? 'Less' : 'More' }}</span>
+          <ion-icon [name]="showFullText ? 'arrow-up-outline' : 'arrow-forward-outline'" slot="end"
+            name="arrow-forward-outline"></ion-icon>
+        </ion-button>
+        <hr class="more-button-hr" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-button class="get-started-button" routerLink="/select-language">
+    <span>Get Started</span>
+    <div class="lines"></div>
+    <div>
+      <ion-icon name="arrow-forward"></ion-icon>
+    </div>
+  </ion-button>
+
+  <hr class="hr2" />
+
+
+</ion-content>

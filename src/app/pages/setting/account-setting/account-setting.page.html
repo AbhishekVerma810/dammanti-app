@@ -1,0 +1,182 @@
+<div class="account-settings1">
+  <div class="status-bar-group">
+    <div class="settings-header1">
+      <ion-icon name="arrow-back" class="pharrow-up-light-icon2" routerLink="/apptabs/tabs/setting"></ion-icon>
+      <div class="account-settings2">Account Settings</div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="frame-container">
+      <div class="frame-div">
+        <div class="security-details-wrapper">
+          <div class="security-details">Security Details</div>
+        </div>
+        <div class="credentials">
+          <div class="label4">
+            <div class="name-label">Label</div>
+            <div class="optional">(optional)</div>
+            <div class="required">*</div>
+            <img class="information-circle-icon" alt="" src="assets/informationcircle.svg" />
+          </div>
+          <div class="helptext">Helptext</div>
+          <div class="input-fields1">
+            <div class="labels">
+              <div class="email-id">Email ID</div>
+            </div>
+            <div class="box">
+              <img class="calendar-clear-icon" alt="" src="assets/calendarclear.svg" />
+              <div class="input-controls">xyz.gmail.com</div>
+            </div>
+            <div class="action-buttons">
+              <div class="change-email" id="open-modal">
+                Change Email
+              </div>
+            </div>
+          </div>
+          <div class="label5">
+            <div class="name-label1">Label</div>
+            <div class="optional1">(optional)</div>
+            <div class="required1">*</div>
+            <img class="information-circle-icon1" alt="" src="assets/informationcircle.svg" />
+          </div>
+          <div class="helptext1">Helptext</div>
+          <div class="input-fields2">
+            <div class="password-wrapper">
+              <div class="password">Password</div>
+            </div>
+            <div class="box1">
+              <img class="calendar-clear-icon1" alt="" src="assets/calendarclear.svg" />
+
+              <div class="text-input">.........</div>
+              <div class="eye-wrapper">
+                <img class="eye-icon" alt="" src="assets/eye.svg" />
+              </div>
+            </div>
+            <div class="change-password-wrapper">
+              <div class="change-password" id="open-modal2">
+                Change Password
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="language-title-parent">
+        <div class="language-title">
+          <div class="language">Language</div>
+        </div>
+        <div class="radio-buttons">
+          <div class="radio-button">
+            <img class="radio-btn-icon" alt="" src="assets/radiobtn.svg" />
+
+            <div class="name">English</div>
+          </div>
+          <div class="radio-button1">
+            <img class="radio-btn-icon1" alt="" src="assets/radiobtn1.svg" />
+
+            <div class="name1">Arabic ( عربي )</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="separator">
+    <div class="divider"></div>
+  </div>
+</div>
+
+<ion-content class="ion-padding">
+  <ion-modal #modal trigger="open-modal">
+    <ng-template style="height: fit-content;">
+      <form action="
+      ">
+        <div class="input-email">
+          <div class="email-input">
+            <div class="email-input-wrapper">
+              <div class="email-field">
+                <div class="input-container">
+                  <h3 class="change-email3">Change Email</h3>
+                  <div class="email-input-label">
+                    <div class="email-id2">Email ID</div>
+                  </div>
+                </div>
+              </div>
+              <img class="material-symbols-lightcancel-icon1" loading="lazy" alt=""
+                src="assets/materialsymbolslightcanceloutline1.svg" (click)="modal.dismiss()" />
+            </div>
+            <div class="box9">
+              <img class="calendar-clear-icon9" alt="" src="assets/calendarclear.svg" />
+              <input class="text-input7" placeholder="xyz@gmail.com" type="text" />
+            </div>
+          </div>
+          <div class="save-button">
+            <button class="primary-button2">
+              <div class="save-changes1">Save Changes</div>
+            </button>
+          </div>
+        </div>
+      </form>
+    </ng-template>
+  </ion-modal>
+</ion-content>
+
+<ion-content class="ion-padding" class="custom-modal">
+  <ion-modal #modal2 trigger="open-modal2">
+    <ng-template style="height: fit-content;">
+      <form>
+        <div class="label-parent email-input-container email-input-container-parent">
+          <div class="password-change-container">
+            <div class="password-input-container">
+              <div class="old-password-input">
+                <div class="old-password-row">
+                  <h3 class="change-password4">Change Password</h3>
+                  <div class="old-password-box">
+                    <div class="old-password">Old Password</div>
+                  </div>
+                </div>
+              </div>
+              <img class="material-symbols-lightcancel-icon2" loading="lazy" alt=""
+                src="assets/materialsymbolslightcanceloutline1.svg" (click)="modal2.dismiss()" />
+            </div>
+            <div class="box12">
+              <img class="calendar-clear-icon12" alt="" src="assets/calendarclear.svg" />
+
+              <input class="old-password-entry" placeholder="........." type="text" />
+
+              <div class="old-password-icon-container">
+                <img class="eye-icon3" alt="" src="assets/eye.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="new-password-row-parent">
+            <div class="new-password-row">
+              <div class="new-password-labels">
+                <div class="new-password">New Password</div>
+              </div>
+              <div class="box13">
+                <img class="calendar-clear-icon13" alt="" src="assets/calendarclear.svg" />
+
+                <input class="new-password-inputs" placeholder="........." type="text" />
+              </div>
+            </div>
+            <div class="new-password-row1">
+              <div class="confirm-password-wrapper">
+                <div class="confirm-password">Confirm Password</div>
+              </div>
+              <div class="box14">
+                <img class="calendar-clear-icon14" alt="" src="assets/calendarclear.svg" />
+
+                <input class="text-input9" placeholder="12345678" type="text" />
+              </div>
+            </div>
+          </div>
+
+          <div class="save-button-container1">
+            <button class="primary-button3">
+              <div class="save-changes2">Save Changes</div>
+            </button>
+          </div>
+        </div>
+      </form>
+    </ng-template>
+  </ion-modal>
+</ion-content>

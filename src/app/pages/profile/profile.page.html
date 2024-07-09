@@ -1,0 +1,129 @@
+<ion-content class="ion-padding">
+  <ion-list class="ion-margin-bottom">
+    <ion-item lines="none" class="ion-margin-bottom">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      <ion-label class="ion-text-center"><h1>Profile</h1></ion-label>
+      <ion-icon name="create-outline" slot="end" id="open-modal3"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <div class="profile-container">
+    <div class="avatar-placeholder">
+      <ion-img src="assets/ellipse-16@2x.png"></ion-img>
+    </div>
+  </div>
+
+  <div class="info-container">
+    <div class="info-item">
+      <div class="label">Gender</div>
+      <div class="value">Male</div>
+    </div>
+    <div class="info-item">
+      <div class="label">Phone No.</div>
+      <div class="value">+966123456789</div>
+    </div>
+    <div class="info-item">
+      <div class="label">City</div>
+      <div class="value">Riyadh</div>
+    </div>
+    <div class="label">Country</div>
+    <div class="value">Saudi Arabia</div>
+  </div>
+
+  <ion-item lines="none" class="ion-margin-top">
+    <ion-icon slot="end" name="exit-outline" slot="start" class="sign-out-label"></ion-icon>
+    <ion-label class="sign-out-label">Sign Out</ion-label>
+  </ion-item>
+
+  <ion-modal #modal3 trigger="open-modal3">
+    <ng-template style="height: fit-content;">
+      <form class="frame-form">
+        <div class="frame-parent2">
+          <div class="frame-wrapper1">
+            <div class="frame-parent3">
+              <div class="edit-profile-parent">
+                <h3 class="edit-profile1">Edit Profile</h3>
+                <div class="frame-parent4">
+                  <img class="frame-inner" loading="lazy" alt="" src="assets/frame-1000009983.svg" />
+
+                  <button class="tablerupload-parent">
+                    <img class="tablerupload-icon" alt="" src="assets/tablerupload.svg" />
+
+                    <div class="upload-wrapper">
+                      <div class="upload">Upload</div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="first-name-wrapper">
+                <div class="first-name">Name</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-wrapper">
+          <div class="box2">
+            <input class="text-input1" placeholder="Enter Your Name" type="text" />
+          </div>
+        </div>
+        <div class="radio-button-parent">
+          <div class="radio-button2">
+            <input class="radio-btn" type="radio" name="radioGroup-1" />
+
+            <div class="name2">Male</div>
+          </div>
+          <div class="radio-button3">
+            <input class="radio-btn1" type="radio" name="radioGroup-1" />
+
+            <div class="name3">Female</div>
+          </div>
+        </div>
+        <div class="frame-parent6">
+          <div class="phone-number-wrapper">
+            <div class="phone-number">Phone Number</div>
+          </div>
+          <div class="box4">
+            <input class="text-input3" placeholder="Enter Your Phone Number" type="text" />
+          </div>
+        </div>
+        <div class="frame-parent7">
+          <div class="city-wrapper">
+            <div class="city">City</div>
+          </div>
+          <div class="box5">
+            <input class="text-input4" placeholder="Riyadh" type="text" />
+          </div>
+        </div>
+        <div class="frame-parent8">
+          <div class="country-wrapper">
+            <div class="country">Country</div>
+          </div>
+          <div class="box6">
+            <input class="text-input5" placeholder="Saudi Arabia" type="text" />
+          </div>
+        </div>
+        <div class="frame-wrapper2">
+          <div class="primary-button-parent">
+            <button class="primary-button">
+              <div class="cancel" (click)="modal3.dismiss()">Cancel</div>
+            </button>
+            <button class="primary-button1">
+              <div class="save-changes">Save Changes</div>
+            </button>
+          </div>
+        </div>
+      </form>
+    </ng-template>
+  </ion-modal>
+</ion-content>
+
+
+
+
+
+
+
+
+

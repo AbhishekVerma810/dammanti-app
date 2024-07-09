@@ -1,0 +1,49 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons mode="md" slot="start">
+      <ion-button (click)="goBack()" fill="clear">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Help & Support</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button routerLink="/apptabs/tabs/setting"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="ion-text-justify">Help & Support</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+ <h3 class="faq">FAQ : </h3> 
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label>How can I change password?</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rhoncus sem non max dignissim. Maecenas porta ex sit amet sollicitudin sqollicitudin.</div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>How can I use app?</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rhoncus sem non max dignissim. Maecenas porta ex sit amet sollicitudin sqollicitudin.</div>
+    </ion-accordion>
+    <ion-accordion value="third">
+      <ion-item slot="header" color="light">
+        <ion-label>How can I give feedback?</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rhoncus sem non max dignissim. Maecenas porta ex sit amet sollicitudin sqollicitudin.</div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+  <h3 class="contact">Contact Us : </h3>
+  <strong>Email</strong> 
+  <p>support.com</p>
+  <strong>Contact No.</strong> 
+  <p>+97389734454</p>
+  <hr />
+</ion-content>

@@ -1,0 +1,138 @@
+<ion-header class="ion-padding ion-no-border" style="border-bottom: 2px solid #000000;">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Add Product</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <form>
+    <ion-item-group>
+      <ion-item lines="none">
+        <h3>Product Details</h3>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label position="stacked">Product Name <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input placeholder="Washing Machine"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label position="stacked">Category <ion-text color="danger">*</ion-text></ion-label>
+        <ion-select placeholder="Appliances">
+          <ion-select-option value="appliances">Appliances</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <div>
+        <ion-item lines="none">
+          <div class="image-upload-container">
+            <div class="image-placeholder">
+              <ion-icon name="image-outline"></ion-icon>
+            </div>
+            <div class="image-placeholder">
+              <ion-icon name="image-outline"></ion-icon>
+            </div>
+          </div>
+          <div style="display: flex;">
+            <div style="margin-right: 10px;">
+
+              <ion-label position="stacked">Product Image</ion-label>
+
+              <ion-button fill="clear">
+                <ion-icon style="font-size: 25px;color:  #929CC2;" slot="start" name="camera-outline"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear">
+                <ion-icon style="font-size: 25px;color:  #929CC2;" slot="start" name="cloud-upload-outline"></ion-icon>
+              </ion-button>
+
+            </div>
+            <div>
+              <ion-label position="stacked">Invoice Copy </ion-label>
+              <ion-button fill="clear">
+                <ion-icon style="font-size: 25px;color:#929CC2;" slot="start" name="camera-outline"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear">
+                <ion-icon style="font-size: 25px;color:#929CC2;" slot="start" name="cloud-upload-outline"></ion-icon>
+              </ion-button>
+            </div>
+          </div>
+        </ion-item>
+      </div>
+      <ion-item lines="none">
+        <ion-label position="stacked">Purchase Date</ion-label>
+        <ion-input placeholder="Washing Machine"></ion-input>
+      </ion-item>
+    </ion-item-group>
+    <ion-item-group>
+      <ion-item>
+        <h3>Warranty Details</h3>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label position="stacked">Warranty Period <ion-text color="danger">*</ion-text></ion-label>
+        <ion-select placeholder="6 Months">
+          <ion-select-option value="6">6 Months</ion-select-option>
+          <ion-select-option value="12">12 Months</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <div style="display: flex ; justify-content:space-around">
+        <div style="width: 43%;">
+          <ion-label position="stacked">Warranty Start Date</ion-label>
+          <ion-input placeholder="Washing Machine"></ion-input>
+        </div>
+        <div style="width: 43%;">
+          <ion-label position="stacked">Warranty End Date</ion-label>
+          <ion-input placeholder="Washing Machine"></ion-input>
+        </div>
+      </div>
+    </ion-item-group>
+    <ion-item-group>
+      <ion-item>
+        <h3>Shop Details</h3>
+      </ion-item>
+      <div  class="shop_details">
+        <div>
+      <div class="image-shop">
+        <ion-icon name="image-outline"></ion-icon>
+      </div>
+      <div  class="product_image">
+
+        <ion-label position="stacked">Shop Picture</ion-label>
+
+        <ion-button fill="clear">
+          <ion-icon  slot="start" name="camera-outline"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear">
+          <ion-icon  slot="start" name="cloud-upload-outline"></ion-icon>
+        </ion-button>
+
+      </div>
+    </div>
+    <div>
+        <div class="input_box">
+          <ion-label position="stacked">Shop Name <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input placeholder="Electrical appliances Co."></ion-input>
+        </div>
+        <div class="input_box">
+          <ion-label position="stacked">Contact Person Name</ion-label>
+          <ion-input placeholder="Mr. Ali"></ion-input>
+        </div>
+      </div>
+    </div>
+        <ion-item lines="none">
+          <ion-label position="stacked">Contact No.</ion-label>
+          <ion-input type="tel" placeholder="1234567890"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label position="stacked">Shop Location</ion-label>
+          <ion-input placeholder="Select Location"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label position="stacked">Notes</ion-label>
+          <ion-textarea placeholder="ABCDEFGHIJKLMNO"></ion-textarea>
+        </ion-item>
+    </ion-item-group>
+    <div class="submit-button-container">
+      <ion-button type="submit" class="submit-button">Save</ion-button>
+    </div>
+  </form>
+</ion-content>
+<ion-footer style="height: 50px;"></ion-footer>

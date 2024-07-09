@@ -1,0 +1,104 @@
+
+ion-content {
+    --background: linear-gradient(167.98deg, #7a85b7, #424566);
+    height: 100%;
+    h1{
+      margin-top: 6px;
+      color: #f4f6f9;
+      font-size: 35px;
+    }
+    form {
+      ion-item {
+        --inner-padding-end: 0;
+        --inner-padding-start: 0;
+        margin-bottom: 6px;
+        border-radius: 7px;
+      }
+      ion-label{
+        color: #f4f6f9;
+      }
+      ion-button {
+        margin-top: 16px;
+        color: #f4f6f9;
+      }
+      ion-icon{
+        padding-right: 10px;
+        color: #f4f6f9;
+      }
+      ion-text{
+        font-size: 12px;
+        color: #F4F6F9;
+      }
+      .remember-me{
+        font-size: 10px;
+      }
+      .forgot-password-button{
+        color:#E0E0A7;
+      }
+      .signin-button-grid{
+        margin-top: 0rem;
+      }
+      .account-text{
+        font-size: 10px;
+        color: #99a0aa;
+      }
+      .signup-text{
+        font-size: 12px;
+        color: #F4F6F9;
+      }
+      .signup-hr{
+        width: 42%;
+        border: none;
+        border-top: 1px solid #F4F6F9;
+      }
+      .get-started-button {
+        --background: white;
+        --border-radius: 20px;
+        font-weight: bold;
+        color: #94a0c6;
+        margin: auto;
+        display: flex;
+        width: 66%;
+        margin-top: 0px;
+        text-transform: none;
+        .lines {
+          width: 49px;
+          height: 3px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+        }
+        div {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: linear-gradient(90deg, #7a85b7 0%, #94a0c6 100%);
+          color: black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+        }
+        .get-started-button ion-icon {
+          font-size: 20px;
+        }
+        .more-button-hr {
+          width: 25%;
+          border: none;
+          border-top: 1px solid #f4f6f9;
+        }
+      }
+      .get-started-button span {
+        margin-right: 1.2rem;
+      }
+    
+      .hr2 {
+        width: 40%;
+        border: none;
+        border-top: 4px solid #191c1b;
+      }
+    }
+  
+  }
+  

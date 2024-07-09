@@ -1,0 +1,34 @@
+ion-content {
+    --background: url('../../../../assets/frame-1000010019@2x.png') no-repeat center center / cover;
+
+    hr {
+        width: 40%;
+        border: none;
+        border-top: 4px solid #191c1b;
+        margin-top: 1.3rem;
+    }
+
+    .dammanati1 {
+        color: #717fdf;
+        font-size: 25px;
+    }
+
+    .dammanati2 {
+        color: #717fdf;
+        font-size: 19px;
+    }
+
+    .why-choose {
+        color: #a3ba7c;
+        font-size: 19px;
+    }
+
+    .support {
+        color: #627AFC;
+    }
+
+    .app-version {
+        color: #FF6868;
+    }
+
+}

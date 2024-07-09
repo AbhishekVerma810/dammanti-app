@@ -1,0 +1,95 @@
+ion-content {
+    --background: linear-gradient(167.98deg, #7a85b7, #424566);
+    .swiper-container {
+      margin-top: 5rem;
+    }
+    .swiper-container-wrapper {
+      position: relative;
+    }
+    .swiper-heading {
+      position: absolute;
+      top: -8px;
+      left: 50%;
+      font-size: 28px;
+      transform: translateX(-50%);
+      z-index: 10;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .swiper-paragraph{
+      position: absolute;
+      width: 100%;
+      top: 34px;
+      left: 73%;
+      font-size: 18px;
+      transform: translateX(-50%);
+      z-index: 10;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    ion-button {
+       --ripple-color: transparent;
+    }
+    h1 {
+      color: #f4f6f9;
+      font-weight: bold;
+    }
+    p {
+      color: #f4f6f9;
+    }
+    .more-button span {
+      color: #f4f6f9;
+    }
+    .more-button ion-icon {
+      color: #f4f6f9;
+    }
+    .more-button-hr {
+      width: 25%;
+      border: none;
+      border-top: 1px solid #f4f6f9;
+    }
+    .get-started-button {
+      --background: white;
+      --border-radius: 20px;
+      font-weight: bold;
+      color: #94a0c6;
+      margin: auto;
+      display: flex;
+      width: 66%;
+      margin-top: 4rem;
+      text-transform: none;
+      .lines {
+        width: 49px;
+        height: 3px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+      }
+      div {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: linear-gradient(90deg, #7a85b7 0%, #94a0c6 100%);
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      .get-started-button ion-icon {
+        font-size: 20px;
+      }
+    }
+    .get-started-button span {
+      margin-right: 1.2rem;
+    }
+  
+    .hr2 {
+      width: 40%;
+      border: none;
+      border-top: 4px solid #191c1b;
+      margin-top: 4rem;
+    }
+  }
+  

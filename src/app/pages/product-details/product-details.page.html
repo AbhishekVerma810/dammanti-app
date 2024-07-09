@@ -1,0 +1,89 @@
+<ion-header class="ion-no-border" style="border-bottom: 2px solid #000000; ">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center" >Product Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item lines="none">
+    <ion-title>{{ product.name }}</ion-title>
+     <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="arrow-redo-outline"  color="success"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="trash-outline" color="danger"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-item>
+
+<ion-content class="ion-padding" fullscreen="true">
+  <ion-card>
+    <ion-card-content>
+      <ion-img src="assets/rectangle-29715-1@2x.png"></ion-img>
+      <ion-text color="medium">
+        <p>{{ product.timeLeft }}</p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-label>Category</ion-label>
+  </ion-item>
+  <ion-item button>
+    <ion-label>Invoice</ion-label>
+    <ion-note slot="end" color="success">View Invoice</ion-note>
+    <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+  </ion-item>
+  <ion-item-divider></ion-item-divider>
+ 
+ <div style="
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    line-height: 10px;
+    height: 60px;
+
+ ">
+  <div>
+    <p>Warranty Start Date</p>
+    <ion-text slot="end">{{ product.warrantyStart }}</ion-text>
+  </div>
+  <div>
+    <p slot="end">Warranty End Date</p>
+    <ion-text slot="end">{{ product.warrantyEnd }}</ion-text>
+  </div>
+</div>
+<ion-item-divider></ion-item-divider>
+   <div style="
+  
+   font-size: 14px;
+   line-height: 10px;
+   height: 50px;
+   margin-left: 20px;">
+   <h6>Contact Details</h6>
+    <p>{{ product.invoiceNo }}</p>
+  </div>
+  <ion-item-divider></ion-item-divider>
+
+  <div  class="reminder_data">
+    <span>Reminder</span>
+    <p >{{ product.reminder }}</p>
+    <p  class="Manage-Reminder">Manage Reminder <ion-icon name="chevron-forward-outline"></ion-icon></p>
+
+  </div>
+ <ion-item-divider></ion-item-divider>
+  <div class="notes">
+    <span>Notes</span>
+    <p>{{ product.notes }}</p>
+  </div>
+  <ion-item-divider></ion-item-divider>
+
+  <div class="shope_location">
+    <ion-label>Shop Location </ion-label><ion-icon name="location"></ion-icon>
+  </div>
+
+</ion-content>
+<ion-footer style="height: 50px;"></ion-footer>

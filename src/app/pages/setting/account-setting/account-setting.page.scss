@@ -1,0 +1,1716 @@
+.change-email3,
+.email-id2 {
+  position: relative;
+  font-family: Nunito;
+  text-align: center;
+}
+.change-email3 {
+  margin: 0;
+  align-self: stretch;
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #000;
+}
+.email-id2 {
+  font-size: 16px;
+  line-height: 20px;
+  color: #686d9a;
+  display: inline-block;
+  min-width: 61px;
+}
+.email-field,
+.email-input-label,
+.input-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.email-input-label {
+  flex-direction: row;
+  padding: 0 5px;
+}
+.email-field,
+.input-container {
+  flex-direction: column;
+}
+.input-container {
+  align-self: stretch;
+  gap: 29px;
+}
+.email-field {
+  width: 148px;
+  padding: 4px 0 0;
+  box-sizing: border-box;
+}
+.material-symbols-lightcancel-icon1 {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.email-input-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+.calendar-clear-icon9 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.text-input7 {
+  width: calc(100% - 46px);
+  border: 0;
+  outline: 0;
+  font-family: Nunito;
+  font-size: 16px;
+  background-color: transparent;
+  height: 19px;
+  flex: 1;
+  position: relative;
+  line-height: 120%;
+  color: #8e979f;
+  text-align: left;
+  display: inline-block;
+  min-width: 177px;
+  white-space: nowrap;
+  padding: 0;
+}
+.chevron-down-icon7 {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.box9,
+.dropdown,
+.email-input {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dropdown {
+  flex-direction: column;
+  padding: 1.5px 0 0;
+}
+.box9,
+.email-input {
+  align-self: stretch;
+}
+.box9 {
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #cbcfd2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px 15px;
+  gap: 8px;
+}
+.email-input {
+  flex-direction: column;
+  gap: 7px;
+}
+.name-label9,
+.optional9,
+.required9 {
+  position: relative;
+  font-family: "IBM Plex Sans";
+  color: #4f575e;
+  text-align: left;
+}
+.name-label9 {
+  align-self: stretch;
+  font-size: 12px;
+  line-height: 18px;
+}
+.optional9,
+.required9 {
+  width: 44px;
+  font-size: 10px;
+  line-height: 14px;
+  display: none;
+}
+.required9 {
+  width: 5px;
+}
+.information-circle-icon9 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.label13 {
+  align-self: stretch;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.save-changes1 {
+  position: relative;
+  font-size: 14px;
+  line-height: 150%;
+  font-family: Nunito;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+  min-width: 94px;
+}
+.primary-button2,
+.save-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.primary-button2 {
+  cursor: pointer;
+  border: 0;
+  padding: 7px 16px;
+  background-color: transparent;
+  border-radius: 8px;
+  background: linear-gradient(91.53deg, #bb9bca, #686fa8);
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+.save-button {
+  justify-content: flex-end;
+  padding: 0 15px;
+}
+.helptext9 {
+  align-self: stretch;
+  height: 14px;
+  position: relative;
+  font-size: 10px;
+  line-height: 14px;
+  font-family: "IBM Plex Sans";
+  color: #4f575e;
+  text-align: left;
+  display: none;
+}
+.input-email,
+.new-email {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.input-email {
+  flex: 1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  background-color: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 27px 27px 22px 26px;
+  gap: 31px;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.new-email {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 0 49px;
+  margin-top: -111px;
+}
+.radio-btn-icon2 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  min-height: 24px;
+}
+.name4 {
+  position: relative;
+  font-size: 19px;
+  line-height: 23px;
+  font-family: Nunito;
+  color: #4f575e;
+  text-align: left;
+  display: inline-block;
+  min-width: 60px;
+}
+.radio-button4 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.radio-btn-icon3 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  min-height: 24px;
+}
+.name5 {
+  width: calc(100% - 24px);
+  border: 0;
+  outline: 0;
+  font-family: Nunito;
+  font-size: 19px;
+  background-color: transparent;
+  height: 23px;
+  flex: 1;
+  position: relative;
+  line-height: 120%;
+  color: #4f575e;
+  text-align: left;
+  display: inline-block;
+  min-width: 70px;
+  padding: 0;
+}
+.radio-button5,
+.radio-buttons1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.radio-button5 {
+  width: 149px;
+  flex-direction: row;
+  gap: 8px;
+}
+.radio-buttons1 {
+  align-self: stretch;
+  border-radius: 16px;
+  background-color: #f4f6f9;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 30px;
+  gap: 27px;
+  flex-shrink: 0;
+  margin-top: -111px;
+}
+.content1,
+.credentials1,
+.security {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.credentials1 {
+  margin: 0;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.content1,
+.security {
+  align-items: flex-start;
+}
+.security {
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #494d66;
+  font-family: Poppins;
+}
+.change-email1,
+.footer {
+  display: flex;
+  align-items: flex-start;
+}
+.footer {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 20px;
+}
+.change-email1 {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 18px;
+  box-sizing: border-box;
+  gap: 59px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: 16.7px;
+  color: #191c1b;
+  font-family: Roboto;
+}
+@media screen and (max-width: 337px) {
+  .account {
+    gap: 31px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .account {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 301px) {
+  .email-input-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+.time-display,
+.tue-jul-192 {
+  position: relative;
+  letter-spacing: 0.3px;
+  mix-blend-mode: normal;
+}
+.time-display {
+  line-height: 24px;
+  display: inline-block;
+  min-width: 34px;
+}
+.tue-jul-192 {
+  align-self: stretch;
+  width: 84px;
+  line-height: 23.89px;
+  color: #000;
+  display: none;
+  align-items: center;
+}
+.time-date2 {
+  width: 152.9px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 11.9px 0;
+  box-sizing: border-box;
+  gap: 9.6px;
+}
+.signal-icon2,
+.wifi-icon2 {
+  height: 19.1px;
+  width: 19.1px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 19px;
+}
+.signal-icon2 {
+  z-index: 1;
+  margin-left: -2.4px;
+}
+.wi-fi-network2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px 0;
+}
+.battery-icon2 {
+  height: 19.1px;
+  width: 19.1px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.until-1000-am2 {
+  height: 24px;
+  width: 114px;
+  position: relative;
+  letter-spacing: 0.3px;
+  line-height: 23.89px;
+  display: none;
+  mix-blend-mode: normal;
+  white-space: nowrap;
+}
+.battery2,
+.status-icons2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.battery2 {
+  justify-content: flex-start;
+  padding: 21.5px 0;
+  gap: 2.4px;
+}
+.status-icons2 {
+  justify-content: flex-end;
+  padding: 0;
+  color: #000;
+}
+.camera5 {
+  position: absolute;
+  top: calc(50% - 14.35px);
+  left: calc(50% - 14.35px);
+  border-radius: 119.44px;
+  background-color: #2e2e2e;
+  width: 100%;
+  height: 100%;
+}
+.camera4 {
+  height: 28.7px;
+  width: 28.7px;
+  position: absolute;
+  margin: 0 !important;
+  top: 9.6px;
+  left: calc(50% - 14.3px);
+}
+.status-bar2,
+.status2 {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.status2 {
+  height: 47.8px;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 19px;
+  box-sizing: border-box;
+  position: relative;
+  gap: 20px;
+}
+.status-bar2 {
+  align-self: stretch;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+.pharrow-up-light-icon2 {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+  min-height: 30px;
+}
+.account-settings2 {
+  width: 197px;
+  position: relative;
+  line-height: 120%;
+  display: inline-block;
+}
+.settings-header1,
+.status-bar-group {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.settings-header1 {
+  border-bottom: 0.5px solid #000;
+  overflow: hidden;
+  flex-direction: row;
+  padding: 17px 24px 15px;
+  gap: 62px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 25px;
+  color: #565b7d;
+  font-family: Nunito;
+}
+.status-bar-group {
+  flex-direction: column;
+  gap: 7.2px;
+  max-width: 100%;
+}
+.security-details {
+  width: 114px;
+  position: relative;
+  line-height: 120%;
+  display: inline-block;
+  min-width: 114px;
+}
+.security-details-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 18px;
+}
+.name-label {
+  align-self: stretch;
+  position: relative;
+  font-size: 12px;
+  line-height: 18px;
+}
+.optional,
+.required {
+  width: 44px;
+  position: relative;
+  line-height: 14px;
+  display: none;
+}
+.required {
+  width: 5px;
+}
+.information-circle-icon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.helptext,
+.label4 {
+  align-self: stretch;
+  display: none;
+}
+.label4 {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.helptext {
+  height: 14px;
+  position: relative;
+  line-height: 14px;
+}
+.email-id {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 61px;
+}
+.labels {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 5px;
+}
+.calendar-clear-icon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.input-controls {
+  flex: 1;
+  position: relative;
+  line-height: 120%;
+  display: inline-block;
+  min-width: 89px;
+  white-space: nowrap;
+}
+.chevron-down-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.box,
+.icons-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.5px 0 0;
+}
+.box {
+  align-self: stretch;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #cbcfd2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 15px;
+  gap: 8px;
+  text-align: left;
+  color: #8e979f;
+}
+.change-email {
+  width: 84px;
+  position: relative;
+  line-height: 16px;
+  display: inline-block;
+  min-width: 84px;
+  cursor: pointer;
+}
+.action-buttons,
+.input-fields1 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.action-buttons {
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 8px;
+  font-size: 13px;
+  color: #2b8cff;
+}
+.input-fields1 {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6.5px;
+  text-align: center;
+  font-size: 16px;
+  color: #686d9a;
+  font-family: Nunito;
+}
+.name-label1 {
+  align-self: stretch;
+  position: relative;
+  font-size: 12px;
+  line-height: 18px;
+}
+.optional1,
+.required1 {
+  width: 44px;
+  position: relative;
+  line-height: 14px;
+  display: none;
+}
+.required1 {
+  width: 5px;
+}
+.information-circle-icon1 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.helptext1,
+.label5 {
+  align-self: stretch;
+  display: none;
+}
+.label5 {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.helptext1 {
+  height: 14px;
+  position: relative;
+  line-height: 14px;
+}
+.password {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 71px;
+}
+.password-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 5px;
+}
+.calendar-clear-icon1 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.text-input {
+  flex: 1;
+  position: relative;
+  line-height: 23px;
+  display: inline-block;
+  min-width: 35px;
+}
+.eye-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.box1,
+.eye-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 3.5px 0 0;
+}
+.box1 {
+  align-self: stretch;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #cbcfd2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 15px;
+  gap: 8px;
+  text-align: left;
+  font-size: 19px;
+  color: #8e979f;
+}
+.change-password {
+  width: 108px;
+  position: relative;
+  line-height: 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+.change-password-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 8px;
+  font-size: 13px;
+  color: #2b8cff;
+}
+.input-fields2 {
+  gap: 6px;
+  text-align: center;
+  font-size: 16px;
+  color: #686d9a;
+  font-family: Nunito;
+}
+.credentials,
+.frame-div,
+.input-fields2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.credentials {
+  border-radius: 16px;
+  background-color: #f4f6f9;
+  overflow: hidden;
+  padding: 23px 26px;
+  gap: 18px;
+  text-align: left;
+  font-size: 10px;
+  color: #4f575e;
+  font-family: "IBM Plex Sans";
+}
+.frame-div {
+  gap: 15px;
+}
+.language {
+  width: 76px;
+  position: relative;
+  line-height: 120%;
+  display: inline-block;
+  min-width: 76px;
+}
+.language-title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 14px;
+}
+.radio-btn-icon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  min-height: 24px;
+}
+.name {
+  position: relative;
+  line-height: 23px;
+  display: inline-block;
+  min-width: 60px;
+}
+.radio-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.radio-btn-icon1 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  min-height: 24px;
+}
+.name1 {
+  position: relative;
+  line-height: 23px;
+  display: inline-block;
+  min-width: 117px;
+}
+.language-title-parent,
+.radio-button1,
+.radio-buttons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.radio-button1 {
+  flex-direction: row;
+  gap: 8px;
+}
+.language-title-parent,
+.radio-buttons {
+  align-self: stretch;
+  flex-direction: column;
+}
+.radio-buttons {
+  border-radius: 16px;
+  background-color: #f4f6f9;
+  overflow: hidden;
+  padding: 30px;
+  gap: 27px;
+  text-align: left;
+  font-size: 19px;
+  color: #4f575e;
+}
+.language-title-parent {
+  gap: 15px;
+}
+.content,
+.frame-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frame-container {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 23px;
+}
+.content {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 24px 197px 25px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+  color: #494d66;
+  font-family: Nunito;
+}
+.divider {
+  height: 4px;
+  width: 120px;
+  position: relative;
+  border-radius: 22px;
+  background-color: #191c1b;
+}
+.separator {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+}
+.account-settings1 {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 18px;
+  box-sizing: border-box;
+  gap: 59px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: 16.7px;
+  color: #191c1b;
+  font-family: Roboto;
+}
+@media screen and (max-width: 337px) {
+  .settings-header1 {
+    gap: 31px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .settings-header1 {
+    flex-wrap: wrap;
+  }
+}
+
+.label14 {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.email-labels {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 5px;
+}
+.email-labels {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.credential-inputs {
+  flex: 1;
+  position: relative;
+  font-size: 16px;
+  line-height: 120%;
+  font-family: Nunito;
+  color: #8e979f;
+  text-align: left;
+  display: inline-block;
+  min-width: 89px;
+  white-space: nowrap;
+}
+.chevron-down-icon8 {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.box10,
+.input-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.5px 0 0;
+}
+.box10 {
+  align-self: stretch;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #cbcfd2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 15px;
+  gap: 8px;
+}
+.change-email4 {
+  width: 84px;
+  position: relative;
+  font-size: 13px;
+  line-height: 16px;
+  font-family: Nunito;
+  color: #2b8cff;
+  text-align: center;
+  display: inline-block;
+  min-width: 84px;
+}
+.action-buttons2,
+.email-row {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.action-buttons2 {
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 8px;
+}
+.email-row {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6.5px;
+}
+.name-label11,
+.optional11,
+.required11 {
+  position: relative;
+  font-family: "IBM Plex Sans";
+  color: #4f575e;
+  text-align: left;
+}
+.name-label11 {
+  align-self: stretch;
+  font-size: 12px;
+  line-height: 18px;
+}
+.optional11,
+.required11 {
+  width: 44px;
+  font-size: 10px;
+  line-height: 14px;
+  display: none;
+}
+.required11 {
+  width: 5px;
+}
+.information-circle-icon11 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.helptext11,
+.label15 {
+  align-self: stretch;
+  display: none;
+}
+.label15 {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.helptext11 {
+  height: 14px;
+  position: relative;
+  font-size: 10px;
+  line-height: 14px;
+  font-family: "IBM Plex Sans";
+  color: #4f575e;
+  text-align: left;
+}
+.password2 {
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Nunito;
+  color: #686d9a;
+  text-align: center;
+  display: inline-block;
+  min-width: 71px;
+}
+.password-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 5px;
+}
+.calendar-clear-icon11 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.text-input8 {
+  width: calc(100% - 46px);
+  border: 0;
+  outline: 0;
+  font-family: Nunito;
+  font-size: 19px;
+  background-color: transparent;
+  height: 23px;
+  flex: 1;
+  position: relative;
+  line-height: 120%;
+  color: #8e979f;
+  text-align: left;
+  display: inline-block;
+  min-width: 177px;
+  padding: 0;
+}
+.eye-icon2 {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.box11,
+.eye-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 3.5px 0 0;
+}
+.box11 {
+  align-self: stretch;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #cbcfd2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 15px;
+  gap: 8px;
+}
+.change-password3 {
+  width: 108px;
+  position: relative;
+  font-size: 13px;
+  line-height: 16px;
+  font-family: Nunito;
+  color: #2b8cff;
+  text-align: center;
+  display: inline-block;
+}
+.change-password-frame {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 8px;
+}
+.email-input-container,
+.email-row1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
+}
+.email-input-container {
+  border-radius: 16px;
+  background-color: #f4f6f9;
+  overflow: hidden;
+  padding: 23px 26px;
+  gap: 18px;
+}
+.name-label12,
+.optional12,
+.required12 {
+  position: relative;
+  font-family: "IBM Plex Sans";
+  color: #4f575e;
+  text-align: left;
+}
+.name-label12 {
+  align-self: stretch;
+  font-size: 12px;
+  line-height: 18px;
+}
+.optional12,
+.required12 {
+  width: 44px;
+  font-size: 10px;
+  line-height: 14px;
+  display: none;
+}
+.required12 {
+  width: 5px;
+}
+.information-circle-icon12 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.label16 {
+  align-self: stretch;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.change-password4,
+.old-password {
+  position: relative;
+  font-family: Nunito;
+  text-align: center;
+}
+.change-password4 {
+  margin: 0;
+  align-self: stretch;
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #000;
+}
+.old-password {
+  font-size: 16px;
+  line-height: 20px;
+  color: #686d9a;
+  display: inline-block;
+  min-width: 102px;
+}
+.old-password-box,
+.old-password-input,
+.old-password-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.old-password-box {
+  flex-direction: row;
+  padding: 0 6px;
+}
+.old-password-input,
+.old-password-row {
+  flex-direction: column;
+}
+.old-password-row {
+  align-self: stretch;
+  gap: 26px;
+}
+.old-password-input {
+  width: 191px;
+  padding: 4px 0 0;
+  box-sizing: border-box;
+}
+.material-symbols-lightcancel-icon2 {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.password-input-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+.calendar-clear-icon12 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.old-password-entry {
+  width: calc(100% - 46px);
+  border: 0;
+  outline: 0;
+  font-family: Nunito;
+  font-size: 19px;
+  background-color: transparent;
+  height: 23px;
+  flex: 1;
+  position: relative;
+  line-height: 120%;
+  color: #8e979f;
+  text-align: left;
+  display: inline-block;
+  min-width: 177px;
+  padding: 0;
+}
+.eye-icon3 {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.old-password-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 3.5px 0 0;
+}
+.box12,
+.password-change-container {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+.box12 {
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #cbcfd2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 10px 15px;
+  gap: 8px;
+}
+.password-change-container {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+}
+.helptext12 {
+  align-self: stretch;
+  height: 14px;
+  font-size: 10px;
+  line-height: 14px;
+  display: none;
+}
+.helptext12,
+.name-label13,
+.optional13,
+.required13 {
+  position: relative;
+  font-family: "IBM Plex Sans";
+  color: #4f575e;
+  text-align: left;
+}
+.name-label13 {
+  align-self: stretch;
+  font-size: 12px;
+  line-height: 18px;
+}
+.optional13,
+.required13 {
+  width: 44px;
+  font-size: 10px;
+  line-height: 14px;
+  display: none;
+}
+.required13 {
+  width: 5px;
+}
+.information-circle-icon13 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.helptext13,
+.label17 {
+  align-self: stretch;
+  display: none;
+}
+.label17 {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.helptext13 {
+  height: 14px;
+  font-size: 10px;
+  line-height: 14px;
+}
+.helptext13,
+.name-label14,
+.optional14,
+.required14 {
+  position: relative;
+  font-family: "IBM Plex Sans";
+  color: #4f575e;
+  text-align: left;
+}
+.name-label14 {
+  align-self: stretch;
+  font-size: 12px;
+  line-height: 18px;
+}
+.optional14,
+.required14 {
+  width: 44px;
+  font-size: 10px;
+  line-height: 14px;
+  display: none;
+}
+.required14 {
+  width: 5px;
+}
+.information-circle-icon14 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.label18 {
+  align-self: stretch;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.new-password {
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Nunito;
+  color: #686d9a;
+  text-align: center;
+  display: inline-block;
+  min-width: 109px;
+}
+.new-password-labels {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 5px;
+}
+.calendar-clear-icon13 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.new-password-inputs {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: Nunito;
+  font-size: 19px;
+  background-color: transparent;
+  height: 23px;
+  flex: 1;
+  position: relative;
+  line-height: 120%;
+  color: #8e979f;
+  text-align: left;
+  display: inline-block;
+  min-width: 178px;
+  padding: 0;
+}
+.box13,
+.new-password-row {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.box13 {
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #1bc590;
+  flex-direction: row;
+  padding: 10px 15px;
+  gap: 8px;
+}
+.new-password-row {
+  flex-direction: column;
+  gap: 7px;
+}
+.confirm-password {
+  position: relative;
+  font-size: 16px;
+  line-height: 120%;
+  font-family: Nunito;
+  color: #686d9a;
+  text-align: center;
+}
+.confirm-password-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 5px;
+}
+.calendar-clear-icon14 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.text-input9 {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: Nunito;
+  font-size: 19px;
+  background-color: transparent;
+  height: 23px;
+  flex: 1;
+  position: relative;
+  line-height: 120%;
+  color: #8e979f;
+  text-align: left;
+  display: inline-block;
+  min-width: 178px;
+  padding: 0;
+}
+.box14,
+.new-password-row-parent,
+.new-password-row1 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.box14 {
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #1bc590;
+  flex-direction: row;
+  padding: 10px 15px;
+}
+.new-password-row-parent,
+.new-password-row1 {
+  flex-direction: column;
+}
+.new-password-row-parent {
+  padding: 0 0 5px;
+  gap: 15px;
+}
+.helptext14,
+.save-changes2 {
+  position: relative;
+  text-align: left;
+}
+.helptext14 {
+  align-self: stretch;
+  height: 14px;
+  font-size: 10px;
+  line-height: 14px;
+  font-family: "IBM Plex Sans";
+  color: #4f575e;
+  display: none;
+}
+.save-changes2 {
+  font-size: 14px;
+  line-height: 150%;
+  font-family: Nunito;
+  color: #fff;
+  display: inline-block;
+  min-width: 94px;
+}
+.primary-button3,
+.save-button-container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.primary-button3 {
+  cursor: pointer;
+  border: 0;
+  padding: 7px 16px;
+  background-color: transparent;
+  border-radius: 8px;
+  background: linear-gradient(91.53deg, #bb9bca, #686fa8);
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+.save-button-container1 {
+  justify-content: flex-end;
+  padding: 0 14px;
+}
+.email-input-container-parent,
+.label-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.label-parent {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 22px 27px 22px 26px;
+  gap: 15px;
+  z-index: 2;
+  margin-top: -200px;
+}
+.email-input-container-parent {
+  margin: 0;
+}
+.content2,
+.security-header-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.security-header-parent {
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #494d66;
+  font-family: Poppins;
+}
+.content2 {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 24px 180px;
+  box-sizing: border-box;
+}
+.divider1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.bottom-divider {
+  height: 4px;
+  width: 120px;
+  position: relative;
+  border-radius: 22px;
+  background-color: #191c1b;
+}
+.bottom-divider-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+}
+.change-password2 {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 18px;
+  box-sizing: border-box;
+  gap: 59px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: 16.7px;
+  color: #191c1b;
+  font-family: Roboto;
+}
+@media screen and (max-width: 409px) {
+  .label-parent {
+    padding-bottom: 20px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 344px) {
+  .password-input-container {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 337px) {
+  .pharrow-up-light-group {
+    gap: 31px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .pharrow-up-light-group {
+    flex-wrap: wrap;
+  }
+}

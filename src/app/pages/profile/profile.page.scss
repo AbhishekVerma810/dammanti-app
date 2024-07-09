@@ -1,0 +1,1205 @@
+ion-content {
+    --background: transparent;
+    overflow: hidden;
+    .profile-container {
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 3 / 2;
+      background: linear-gradient(91.53deg, #BB9BCA 0%, #686FA8 100%);
+      position: relative;
+      border-radius: 10px;
+      margin: 0 auto 3rem; 
+      height: 20%;
+    }
+    
+    .avatar-placeholder {
+      width: 30%;
+      aspect-ratio: 1 / 1;
+      background-color: white;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid transparent;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    ion-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .info-container {
+      font-family: Arial, sans-serif;
+      padding: 1rem;
+    }
+    
+    .info-item {
+      margin-bottom: 20px;
+    }
+    
+    .label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .value {
+      color: #333;
+    }
+    .sign-out-label{
+      color:#FF6868;
+    }
+  }
+  
+  .background2 {
+    height: 4px;
+    width: 120px;
+    position: relative;
+    border-radius: 22px;
+    background-color: #191c1b;
+  }
+  .button-background {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .logout-button,
+  .logout-button-wrapper,
+  .user-profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .logout-button {
+    flex: 1;
+    flex-direction: column;
+    gap: 71px;
+  }
+  .logout-button-wrapper,
+  .user-profile {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Nunito;
+  }
+  .logout-button-wrapper {
+    width: 330px;
+    flex-direction: row;
+    padding: 0 55px;
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .user-profile {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 0 0 18px;
+    gap: 64px;
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 22px;
+    color: #fff;
+  }
+  .edit-profile1 {
+    margin: 0;
+    position: relative;
+    font-size: 23px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: Nunito;
+    color: #000;
+    text-align: center;
+    display: inline-block;
+    min-width: 113px;
+  }
+  .frame-inner,
+  .tablerupload-icon {
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .frame-inner {
+    height: 66px;
+    width: 66px;
+    border-radius: 7.65px;
+  }
+  .tablerupload-icon {
+    height: 15.4px;
+    width: 15.4px;
+    min-height: 15px;
+  }
+  .upload {
+    position: relative;
+    font-size: 10.2px;
+    font-family: Nunito;
+    color: rgba(17, 17, 17, 0.5);
+    text-align: left;
+    display: inline-block;
+    min-width: 35px;
+  }
+  .upload-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.7px 0 0;
+  }
+  .edit-profile-parent,
+  .frame-parent4,
+  .tablerupload-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .tablerupload-parent {
+    cursor: pointer;
+    border: 0.7px solid rgba(17, 17, 17, 0.2);
+    padding: 6px 6px 6px 7px;
+    background-color: transparent;
+    flex: 1;
+    box-shadow: 0 1.9px 9.59px rgba(0, 0, 0, 0.03);
+    border-radius: 5.85px;
+    overflow: hidden;
+    align-items: flex-start;
+    gap: 4.8px;
+    flex-shrink: 0;
+  }
+  .edit-profile-parent,
+  .frame-parent4 {
+    align-self: stretch;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  .edit-profile-parent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .first-name {
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Nunito;
+    color: #686d9a;
+    text-align: center;
+    display: inline-block;
+  }
+  .first-name-wrapper,
+  .frame-parent3,
+  .frame-wrapper1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .first-name-wrapper {
+    flex-direction: row;
+    padding: 0 5px;
+  }
+  .frame-parent3,
+  .frame-wrapper1 {
+    flex-direction: column;
+  }
+  .frame-parent3 {
+    align-self: stretch;
+    gap: 20px;
+  }
+  .frame-wrapper1 {
+    width: 145.8px;
+    padding: 7px 0 0;
+    box-sizing: border-box;
+  }
+  .material-symbols-lightcancel-icon {
+    height: 42px;
+    width: 42px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .frame-parent2 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .calendar-clear-icon2 {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: none;
+  }
+  .text-input1 {
+    width: calc(100% - 46px);
+    border: 0;
+    outline: 0;
+    font-family: Nunito;
+    font-size: 16px;
+    background-color: transparent;
+    height: 19px;
+    flex: 1;
+    position: relative;
+    line-height: 120%;
+    color: #8e979f;
+    text-align: left;
+    display: inline-block;
+    min-width: 177px;
+    padding: 0;
+  }
+  .chevron-down-icon1 {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .box-wrapper,
+  .box2,
+  .chevron-down-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .chevron-down-wrapper {
+    flex-direction: column;
+    padding: 1.5px 0 0;
+  }
+  .box-wrapper,
+  .box2 {
+    flex-direction: row;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .box2 {
+    flex: 1;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 1px solid #cbcfd2;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    gap: 8px;
+  }
+  .box-wrapper {
+    width: 328px;
+    padding: 0 0 13px;
+  }
+  .name-label2,
+  .optional2,
+  .required2 {
+    position: relative;
+    font-family: "IBM Plex Sans";
+    color: #4f575e;
+    text-align: left;
+  }
+  .name-label2 {
+    align-self: stretch;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .optional2,
+  .required2 {
+    width: 44px;
+    font-size: 10px;
+    line-height: 14px;
+    display: none;
+  }
+  .required2 {
+    width: 5px;
+  }
+  .information-circle-icon2 {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .label6 {
+    width: 328px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    max-width: 100%;
+  }
+  .last-name {
+    width: 79px;
+    position: relative;
+    font-size: 16px;
+    line-height: 120%;
+    font-family: Nunito;
+    color: #686d9a;
+    text-align: center;
+    display: inline-block;
+    min-width: 79px;
+  }
+  .last-name-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 5px;
+  }
+  .calendar-clear-icon3 {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: none;
+  }
+  .text-input2 {
+    width: calc(100% - 46px);
+    border: 0;
+    outline: 0;
+    font-family: Nunito;
+    font-size: 16px;
+    background-color: transparent;
+    height: 19px;
+    flex: 1;
+    position: relative;
+    line-height: 120%;
+    color: #8e979f;
+    text-align: left;
+    display: inline-block;
+    min-width: 177px;
+    padding: 0;
+  }
+  .chevron-down-icon2 {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .chevron-down-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0 0;
+  }
+  .box3,
+  .frame-parent5 {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .box3 {
+    align-self: stretch;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 1px solid #cbcfd2;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 15px;
+  }
+  .frame-parent5 {
+    width: 328px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 0 13px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .helptext2 {
+    width: 328px;
+    height: 14px;
+    font-size: 10px;
+    line-height: 14px;
+    display: none;
+    max-width: 100%;
+  }
+  .helptext2,
+  .name-label3,
+  .optional3,
+  .required3 {
+    position: relative;
+    font-family: "IBM Plex Sans";
+    color: #4f575e;
+    text-align: left;
+  }
+  .name-label3 {
+    align-self: stretch;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .optional3,
+  .required3 {
+    width: 44px;
+    font-size: 10px;
+    line-height: 14px;
+    display: none;
+  }
+  .required3 {
+    width: 5px;
+  }
+  .information-circle-icon3 {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .label7 {
+    width: 328px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    max-width: 100%;
+  }
+  .radio-btn {
+    cursor: pointer;
+    margin: 0;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    min-height: 24px;
+  }
+  .name2 {
+    position: relative;
+    font-size: 19px;
+    line-height: 23px;
+    font-family: Nunito;
+    color: #4f575e;
+    text-align: left;
+    display: inline-block;
+    min-width: 43px;
+  }
+  .radio-button2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .radio-btn1 {
+    cursor: pointer;
+    margin: 0;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    min-height: 24px;
+  }
+  .name3 {
+    position: relative;
+    font-size: 19px;
+    line-height: 23px;
+    font-family: Nunito;
+    color: #4f575e;
+    text-align: left;
+    display: inline-block;
+    min-width: 65px;
+  }
+  .radio-button-parent,
+  .radio-button3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .radio-button-parent {
+    padding: 0 0 13px;
+    gap: 10px;
+  }
+  .helptext3 {
+    width: 328px;
+    height: 14px;
+    position: relative;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: "IBM Plex Sans";
+    color: #4f575e;
+    text-align: left;
+    display: none;
+    max-width: 100%;
+  }
+  .phone-number {
+    width: 109px;
+    position: relative;
+    font-size: 16px;
+    line-height: 120%;
+    font-family: Nunito;
+    color: #686d9a;
+    text-align: center;
+    display: inline-block;
+    min-width: 109px;
+  }
+  .phone-number-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 5px;
+  }
+  .calendar-clear-icon4 {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: none;
+  }
+  .text-input3 {
+    width: calc(100% - 46px);
+    border: 0;
+    outline: 0;
+    font-family: Nunito;
+    font-size: 16px;
+    background-color: transparent;
+    height: 19px;
+    flex: 1;
+    position: relative;
+    line-height: 120%;
+    color: #8e979f;
+    text-align: left;
+    display: inline-block;
+    min-width: 177px;
+    white-space: nowrap;
+    padding: 0;
+  }
+  .chevron-down-icon3 {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .chevron-down-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0 0;
+  }
+  .box4,
+  .frame-parent6 {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .box4 {
+    align-self: stretch;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 1px solid #cbcfd2;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 15px;
+  }
+  .frame-parent6 {
+    width: 328px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 0 13px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .name-label4,
+  .optional4,
+  .required4 {
+    position: relative;
+    font-family: "IBM Plex Sans";
+    color: #4f575e;
+    text-align: left;
+  }
+  .name-label4 {
+    align-self: stretch;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .optional4,
+  .required4 {
+    width: 44px;
+    font-size: 10px;
+    line-height: 14px;
+    display: none;
+  }
+  .required4 {
+    width: 5px;
+  }
+  .information-circle-icon4 {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .label8 {
+    width: 328px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    max-width: 100%;
+  }
+  .city {
+    width: 30px;
+    position: relative;
+    font-size: 16px;
+    line-height: 120%;
+    font-family: Nunito;
+    color: #686d9a;
+    text-align: center;
+    display: inline-block;
+    min-width: 30px;
+  }
+  .city-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 5px;
+  }
+  .calendar-clear-icon5 {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: none;
+  }
+  .text-input4 {
+    width: calc(100% - 46px);
+    border: 0;
+    outline: 0;
+    font-family: Nunito;
+    font-size: 16px;
+    background-color: transparent;
+    height: 19px;
+    flex: 1;
+    position: relative;
+    line-height: 120%;
+    color: #8e979f;
+    text-align: left;
+    display: inline-block;
+    min-width: 177px;
+    padding: 0;
+  }
+  .chevron-down-icon4 {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .chevron-down-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0 0;
+  }
+  .box5,
+  .frame-parent7 {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .box5 {
+    align-self: stretch;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 1px solid #cbcfd2;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 15px;
+  }
+  .frame-parent7 {
+    width: 328px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 0 13px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .helptext4 {
+    width: 328px;
+    height: 14px;
+    font-size: 10px;
+    line-height: 14px;
+    display: none;
+    max-width: 100%;
+  }
+  .helptext4,
+  .name-label5,
+  .optional5,
+  .required5 {
+    position: relative;
+    font-family: "IBM Plex Sans";
+    color: #4f575e;
+    text-align: left;
+  }
+  .name-label5 {
+    align-self: stretch;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .optional5,
+  .required5 {
+    width: 44px;
+    font-size: 10px;
+    line-height: 14px;
+    display: none;
+  }
+  .required5 {
+    width: 5px;
+  }
+  .information-circle-icon5 {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .label9 {
+    width: 328px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    max-width: 100%;
+  }
+  .country {
+    width: 60px;
+    position: relative;
+    font-size: 16px;
+    line-height: 120%;
+    font-family: Nunito;
+    color: #686d9a;
+    text-align: center;
+    display: inline-block;
+    min-width: 60px;
+  }
+  .country-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 5px;
+  }
+  .calendar-clear-icon6 {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: none;
+  }
+  .text-input5 {
+    width: calc(100% - 46px);
+    border: 0;
+    outline: 0;
+    font-family: Nunito;
+    font-size: 16px;
+    background-color: transparent;
+    height: 19px;
+    flex: 1;
+    position: relative;
+    line-height: 120%;
+    color: #8e979f;
+    text-align: left;
+    display: inline-block;
+    min-width: 177px;
+    padding: 0;
+  }
+  .chevron-down-icon5 {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .chevron-down-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0 0;
+  }
+  .box6,
+  .frame-parent8 {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .box6 {
+    align-self: stretch;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 1px solid #cbcfd2;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 15px;
+  }
+  .frame-parent8 {
+    width: 328px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 0 11px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .helptext5 {
+    width: 328px;
+    height: 14px;
+    font-size: 10px;
+    line-height: 14px;
+    display: none;
+    max-width: 100%;
+  }
+  .helptext5,
+  .name-label6,
+  .optional6,
+  .required6 {
+    position: relative;
+    font-family: "IBM Plex Sans";
+    color: #4f575e;
+    text-align: left;
+  }
+  .name-label6 {
+    align-self: stretch;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .optional6,
+  .required6 {
+    width: 44px;
+    font-size: 10px;
+    line-height: 14px;
+    display: none;
+  }
+  .required6 {
+    width: 5px;
+  }
+  .information-circle-icon6 {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .label10 {
+    width: 328px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    max-width: 100%;
+  }
+  .cancel {
+    position: relative;
+    font-size: 14px;
+    line-height: 150%;
+    font-family: Nunito;
+    // background: linear-gradient(91.53deg, #bb9bca, #686fa8);
+    -webkit-text-fill-color: #5f5353;;
+    text-align: left;
+    display: inline-block;
+    min-width: 46px;
+  }
+  .primary-button {
+    cursor: pointer;
+    border: 1px solid #bb9bca;
+    padding: 5px 15px;
+    background-color: #fff;
+    width: 78px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .primary-button:hover {
+    background-color: #e6e6e6;
+    border: 1px solid #876996;
+    box-sizing: border-box;
+  }
+  .save-changes {
+    position: relative;
+    font-size: 14px;
+    line-height: 150%;
+    font-family: Nunito;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    min-width: 94px;
+  }
+  .primary-button1 {
+    cursor: pointer;
+    border: 0;
+    padding: 7px 16px;
+    background-color: transparent;
+    border-radius: 8px;
+    background: linear-gradient(91.53deg, #bb9bca, #686fa8);
+    justify-content: flex-start;
+    white-space: nowrap;
+  }
+  .frame-wrapper2,
+  .primary-button-parent,
+  .primary-button1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .primary-button-parent {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .frame-wrapper2 {
+    align-self: stretch;
+    justify-content: flex-end;
+    padding: 0 11px;
+  }
+  .helptext6 {
+    width: 328px;
+    height: 14px;
+    position: relative;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: "IBM Plex Sans";
+    color: #4f575e;
+    text-align: left;
+    display: none;
+    max-width: 100%;
+  }
+  .frame-form {
+    margin: 0;
+    flex: 1;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 19px 17px 18px 26px;
+    box-sizing: border-box;
+    gap: 7px;
+    max-width: 100%;
+    z-index: 3;
+  }
+  .lets-iconssign-out-circle-duo-parent {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+  }
+  .edit-profile-inner,
+  .frame-section,
+  .lets-iconssign-out-circle-duo-parent {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .frame-section {
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 33px;
+    text-align: center;
+    font-size: 25px;
+    color: #565b7d;
+    font-family: Nunito;
+  }
+  .edit-profile-inner {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 23px 52.8px 24px;
+    box-sizing: border-box;
+  }
+  .edit-profile-child {
+    width: 342px;
+    position: relative;
+    max-height: 100%;
+    display: none;
+    max-width: 100%;
+    z-index: 2;
+  }
+  .john-johnson,
+  .johnjohnsongmailcom {
+    width: 143px;
+    position: relative;
+    font-size: 22px;
+    line-height: 120%;
+    color: #fff;
+    display: none;
+    z-index: 3;
+  }
+  .johnjohnsongmailcom {
+    width: 133px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 4;
+  }
+  .edit-profile-item {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    object-fit: contain;
+    display: none;
+    z-index: 5;
+  }
+  .gender {
+    line-height: 16px;
+    min-width: 46px;
+    z-index: 6;
+  }
+  .city1,
+  .gender,
+  .male {
+    position: relative;
+    display: none;
+  }
+  .male {
+    font-size: 23px;
+    line-height: 28px;
+    color: #565b7d;
+    min-width: 52px;
+    z-index: 7;
+  }
+  .city1 {
+    line-height: 16px;
+    min-width: 25px;
+    z-index: 8;
+  }
+  .riyadh {
+    font-size: 23px;
+    line-height: 28px;
+    color: #565b7d;
+    min-width: 73px;
+    z-index: 9;
+  }
+  .country1,
+  .riyadh,
+  .saudi-arabia {
+    position: relative;
+    display: none;
+  }
+  .country1 {
+    line-height: 16px;
+    min-width: 49px;
+    z-index: 10;
+  }
+  .saudi-arabia {
+    font-size: 23px;
+    line-height: 28px;
+    color: #565b7d;
+    z-index: 11;
+  }
+  .phone-no {
+    line-height: 16px;
+    min-width: 61px;
+    z-index: 12;
+  }
+  .div,
+  .phone-no,
+  .sign-out1 {
+    position: relative;
+    display: none;
+  }
+  .div {
+    font-size: 23px;
+    line-height: 28px;
+    color: #565b7d;
+    white-space: nowrap;
+    z-index: 13;
+  }
+  .sign-out1 {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    background: linear-gradient(91.53deg, #ff6868, #e30000);
+    -webkit-text-fill-color: transparent;
+    min-width: 67px;
+    z-index: 14;
+  }
+  .rectangle-div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+  .frame-child1 {
+    height: 4px;
+    width: 120px;
+    position: relative;
+    border-radius: 22px;
+    background-color: #191c1b;
+  }
+  .edit-profile-inner1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .edit-profile {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0 0 18px;
+    box-sizing: border-box;
+    gap: 21.2px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    font-size: 13px;
+    color: #686d9a;
+    font-family: Nunito;
+  }
+  @media screen and (max-width: 410px) {
+    .edit-profile-inner {
+      padding-bottom: 22px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 383px) {
+    .frame-section {
+      gap: 16px;
+    }
+  }
+  @media screen and (max-width: 298px) {
+    .frame-parent2 {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 223px) {
+    .frame-parent1 {
+      flex-wrap: wrap;
+    }
+  }
+  
