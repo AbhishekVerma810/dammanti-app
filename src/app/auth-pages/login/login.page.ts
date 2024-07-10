@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ApiService } from '../../services/api.service';
 import { MessageService } from '../../services/message.service';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -37,7 +38,7 @@ export class LoginPage implements OnInit {
   onChange() {
     this.isTypePassword = !this.isTypePassword;
   }
-
+  
   onSubmit() {
    
     if (this.signupForm.invalid) return;

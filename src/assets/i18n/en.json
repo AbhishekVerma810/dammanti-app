@@ -48,12 +48,21 @@
   "EMAIL": "Email",
   "SEND": "Send",
   "VERIFY_YOUR_EMAIL": "Verify Your Email",
-  "ENTER_4_DIGIT_CODE": "Please Enter The 4 Digit Code Sent To",
+  "ENTER_4_DIGIT_CODE": "Please Enter The 4 Digit Code Sent To sourav.gmail.com",
   "RESEND_CODE": "Resend Code",
   "VERIFY": "Verify",
   "CREATE_NEW_PASSWORD": "Create New Password",
   "NEW_PASSWORD_MUST_BE_DIFFERENT": "Your New Password Must Be Different",
   "FROM_PREVIOUS_PASSWORD": "From Previously Used Password",
   "NEW_PASSWORD": "New Password",
-  "SAVE": "Save"
-}
+  "SAVE": "Save",
+  "ENTER_EMAIL_VERIFICATION_CODE": "Please Enter Your Email Address To Receive a Verification Code",
+  "ENTER_YOUR_EMAIL": "Enter your email",
+  "ENTER_PROPER_EMAIL": "*Please Enter Proper Email Address",
+  "ENTER_NAME": "Please Enter Your Name",
+  "ENTER_CITY_COUNTRY": "Please Enter Your City And Country",
+  "ENTER_VALID_PASSWORD": "Please Enter A Valid Password",
+  "ENTER_VALID_EMAIL": "Please Enter A Valid Email Address",
+  "GENDER":"Gender",
+  "SELECT":"Select"
+  }

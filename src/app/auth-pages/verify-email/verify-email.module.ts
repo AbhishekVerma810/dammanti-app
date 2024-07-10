@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { VerifyEmailPageRoutingModule } from './verify-email-routing.module';
-
+import { TranslateModule } from '@ngx-translate/core';
 import { VerifyEmailPage } from './verify-email.page';
 
 @NgModule({
@@ -13,7 +13,8 @@ import { VerifyEmailPage } from './verify-email.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    VerifyEmailPageRoutingModule
+    VerifyEmailPageRoutingModule,
+    TranslateModule
   ],
   declarations: [VerifyEmailPage]
 })

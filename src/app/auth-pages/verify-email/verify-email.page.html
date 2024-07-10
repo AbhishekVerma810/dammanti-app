@@ -5,7 +5,7 @@
         <ion-back-button defaultHref="/"></ion-back-button>
       </ion-col>
       <ion-col class="ion-text-center" size="10">
-        <h2>Verify Email</h2>
+        <h2>{{ 'VERIFY_EMAIL' | translate }}</h2>
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -21,12 +21,12 @@
   <ion-row>
     <ion-col class="ion-text-center ion-margin-top">
       <ion-text>
-        Please Enter The 4 Digit Code Sent To sourav.gmail.com
+        {{ 'ENTER_4_DIGIT_CODE' | translate }}
       </ion-text>
     </ion-col>
   </ion-row>
 
-  <form>
+  <!-- <form>
     <ion-grid class="signin-button-grid">
       <ion-row class="ion-justify-content-center ion-margin-top">
         <ion-col size="2" *ngFor="let i of [1,2,3,4]">
@@ -37,7 +37,7 @@
       <ion-row class="ion-justify-content-center ion-margin-top">
         <ion-col size="auto">
           <ion-button fill="clear" class="resend-button">
-            Resend OTP
+            {{ 'RESEND_OTP' | translate }}
           </ion-button>
           <hr class="signup-hr" />
         </ion-col>
@@ -47,7 +47,40 @@
     <ion-row class="ion-margin-bottom">
       <ion-col>
         <ion-button class="get-started-button" routerLink="/reset-password">
-          <span>Verify</span>
+          <span> {{ 'Verify' | translate }}</span>
+          <div class="lines"></div>
+          <div>
+            <ion-icon name="arrow-forward"></ion-icon>
+          </div>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <hr class="hr2" />
+  </form> -->
+
+  <form (ngSubmit)="verifyOTP()">
+    <ion-grid class="signin-button-grid">
+      <ion-row class="ion-justify-content-center ion-margin-top">
+        <ion-col size="2" *ngFor="let digit of otpDigits; let i = index">
+          <ion-input type="text" maxlength="1" class="otp-input" [(ngModel)]="otpDigits[i]" [name]="'otp-' + i"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center ion-margin-top">
+        <ion-col size="auto">
+          <ion-button fill="clear" class="resend-button">
+            {{ 'RESEND_OTP' | translate }}
+          </ion-button>
+          <hr class="signup-hr" />
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+    <ion-row class="ion-margin-bottom">
+      <ion-col>
+        <ion-button class="get-started-button" type="submit">
+          <span> {{ 'Verify' | translate }}</span>
           <div class="lines"></div>
           <div>
             <ion-icon name="arrow-forward"></ion-icon>
