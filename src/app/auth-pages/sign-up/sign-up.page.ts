@@ -4,6 +4,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ApiService } from '../../services/api.service'; 
 import { Router } from '@angular/router';
 import { MessageService } from 'src/app/services/message.service';
+import { Geolocation } from '@capacitor/geolocation';
+declare var google: any;
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.page.html',
@@ -11,15 +13,17 @@ import { MessageService } from 'src/app/services/message.service';
 })
 export class SignUpPage implements OnInit {
   signupForm: FormGroup;
-
+  center: { lat: any; lng: any; };
+  formattedAddress:any;
   constructor(
     private formBuilder: FormBuilder,
     private authService: ApiService,
     private router:Router,
     private messageService: MessageService,
-  ) {}
-
-  ngOnInit() {
+  ) {
+    this.printCurrentPosition();
+  }
+   ngOnInit() {
     this.signupForm = this.formBuilder.group({
       name: ['', Validators.required],
       gender: ['', Validators.required],
@@ -36,6 +40,42 @@ export class SignUpPage implements OnInit {
       ? null : {'mismatch': true};
   }
 
+  
+  async fetchFormattedAddress() {
+    console.log('hello abhi12')
+    try {
+     
+      const geocoder = new google.maps.Geocoder();
+      const latlng = new google.maps.LatLng(this.center.lat, this.center.lng);
+      geocoder.geocode({ 'location': latlng }, (results, status) => {
+        if (status === google.maps.GeocoderStatus.OK) {
+          if (results && results.length > 0) {
+            this.formattedAddress = results[0].formatted_address;
+          } else {
+            console.log('No results found');
+          }
+        } else {
+          console.log('Geocoder failed due to: ' + status);
+        }
+      });
+    } catch (error) {
+      console.error('Error fetching formatted address:', error);
+    }
+}
+async printCurrentPosition() {
+  try {
+    const position = await Geolocation.getCurrentPosition();
+    console.log('Current position:', position);
+    this.center = {
+      lat: position.coords.latitude,
+      lng: position.coords.longitude
+    };
+    this.fetchFormattedAddress();
+  
+  } catch (error) {
+    console.error('Error getting current position:', error);
+  }
+}
   onSubmit() {
     if (this.signupForm.valid) {
       const data={
@@ -51,13 +91,9 @@ export class SignUpPage implements OnInit {
           this.messageService.presentToast('Signup successful', 'success'); 
           this.router.navigate(['/apptabs/tabs/home'])
           this.signupForm.reset();
-
-        },
-        error => {
-          
-          this.messageService.presentToast("Signup failed", 'danger');
-         
-        }
+       },error => {
+            this.messageService.presentToast("Signup failed", 'danger');
+           }
       );
     }
   }
