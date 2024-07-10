@@ -13,6 +13,12 @@ ion-content {
         --inner-padding-start: 0;
         margin-bottom: 6px;
         border-radius: 7px;
+        select{
+          height: 49px;
+          border: white 0px;
+          margin-left: -1px;
+        }
+       
       }
       ion-label{
         color: #f4f6f9;
@@ -36,7 +42,7 @@ ion-content {
         color:#E0E0A7;
       }
       .signin-button-grid{
-        margin-top: 0rem;
+        margin-top: 24%;
       }
       .account-text{
         font-size: 10px;
