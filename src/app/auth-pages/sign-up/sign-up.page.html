@@ -24,17 +24,13 @@
       <ion-col size="3">
         <ion-label>Gender</ion-label>
         <ion-item lines="full">
-          <!-- <ion-select formControlName="gender">
-            <ion-select-option value="Male">Male</ion-select-option>
-            <ion-select-option value="Female">Female</ion-select-option>
-            <ion-select-option value="Other">Other</ion-select-option>
-          </ion-select> -->
           <select formControlName="gender">
-            <option value="Man">Man</option>
-            <option value="Woman">Woman</option>
-            <option value="Other">Other</option>
+            <option value="" disabled selected>Select</option>
+            <option value="Man">Male</option>
+            <option value="Woman">Female</option>
+            <option value="Woman">Other</option>
           </select>
-        </ion-item>
+        </ion-item>        
       </ion-col>
       <ion-col size="9">
         <ion-label>City, Country</ion-label>
