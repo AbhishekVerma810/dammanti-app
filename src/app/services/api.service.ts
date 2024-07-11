@@ -1,4 +1,3 @@
-
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
@@ -32,7 +31,10 @@ export class ApiService {
 
 
   forgotPassword(data: any) {
-    return this.http.post(`${environment.baseUrl}/api/user/forget/password`, data);
+    return this.http.post(`${environment.baseUrl}/api/auth/forget-password`, data);
+  }
+  resetPassword(data: any) {
+    return this.http.post(`${environment.baseUrl}/api/auth/reset/password`, data);
   }
   forgotPasswordWitOtp(data) {
     return this.http.post(`${environment.baseUrl}/api/user/reset/password`, data);
@@ -74,5 +76,3 @@ export class ApiService {
     return this.http.post(`${environment.baseUrl}${url}`, {}, this.getHttpHeaders());
   }
 }
-
-

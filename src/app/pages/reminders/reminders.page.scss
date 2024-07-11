@@ -1,50 +1,6 @@
 ion-content {
-    --background: #f4f5f8;
-  }
-  
-
-  
-  .reminder-item {
-    --background: white;
-    --padding-start: 10px;
-    --padding-end: 10px;
-    --padding-top: 10px;
-    --padding-bottom: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  
-    ion-thumbnail {
-      --size: 60px;
-      --border-radius: 10px;
-      margin-right: 15px;
-    }
-  
-    ion-label {
-      h2 {
-        font-size: 16px;
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 4px;
-      }
-  
-      p {
-        font-size: 14px;
-        color: #666;
-      }
-    }
-  
-    ion-chip {
-      --background: #ffe4e1;
-      --color: #ff4500;
-      font-size: 12px;
-      height: 24px;
-      padding: 0 8px;
-    }
-  
-    ion-icon {
-      color: #c4c4c4;
-      font-size: 20px;
-    }
-  }
-  
+  --background: #f4f4f4;
+   ion-row{
+    background-color: red;
+   }
+}

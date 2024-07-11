@@ -7,77 +7,71 @@
         </ion-button>
       </ion-col>
       <ion-col size="8">
-        <h1>Sign Up</h1>
+        <h1>{{ 'SIGN_UP' | translate }}</h1>
       </ion-col>
     </ion-row>
   </ion-grid>
   <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
-    <ion-label>Name</ion-label>
+    <ion-label>{{ 'NAME' | translate }}</ion-label>
     <ion-item lines="full">
-      <ion-input type="text" formControlName="name" required placeholder="enter your name"></ion-input>
+      <ion-input type="text" formControlName="name" required placeholder="Enter Your Name"></ion-input>
     </ion-item>
     <ion-text class="ion-text-left" color="danger" *ngIf="!signupForm.get('name').valid && signupForm.get('name').touched">
-      <p class="error">Please enter your name</p>
+      <p class="error">{{ 'ENTER_NAME' | translate }}</p>
     </ion-text>
-
     <ion-row>
       <ion-col size="3">
-        <ion-label>Gender</ion-label>
+        <ion-label>{{ 'GENDER' | translate }}</ion-label>
         <ion-item lines="full">
-          <!-- <ion-select formControlName="gender">
-            <ion-select-option value="Male">Male</ion-select-option>
-            <ion-select-option value="Female">Female</ion-select-option>
-            <ion-select-option value="Other">Other</ion-select-option>
-          </ion-select> -->
           <select formControlName="gender">
-            <option value="Man">Man</option>
-            <option value="Woman">Woman</option>
-            <option value="Other">Other</option>
+            <option value="" disabled selected>{{ 'SELECT' | translate }}</option>
+            <option value="Man">{{ 'MALE' | translate }}</option>
+            <option value="Woman">{{ 'FEMALE' | translate }}</option>
           </select>
-        </ion-item>
+        </ion-item>        
       </ion-col>
       <ion-col size="9">
-        <ion-label>City, Country</ion-label>
+        <ion-label>{{ 'CITY' | translate }},{{ 'COUNTRY' | translate }}</ion-label>
         <ion-item lines="full">
           <ion-input type="text" formControlName="city" required placeholder="City, Country"></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
     <ion-text class="ion-text-left" color="danger" *ngIf="!signupForm.get('city').valid && signupForm.get('city').touched">
-      <p class="error">Please enter your city and country</p>
+      <p class="error">{{ 'ENTER_CITY_COUNTRY' | translate }}</p>
     </ion-text>
 
-    <ion-label>Email</ion-label>
+    <ion-label>{{ 'EMAIL_ADDRESS' | translate }}</ion-label>
     <ion-item lines="full">
-      <ion-input type="email" formControlName="email" required placeholder="enter your email"></ion-input>
+      <ion-input type="email" formControlName="email" required placeholder="Enter Your Email"></ion-input>
     </ion-item>
     <ion-text class="ion-text-left" color="danger" *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched">
-      <p class="error">Please enter a valid email address</p>
+      <p class="error">{{ 'ENTER_VALID_EMAIL' | translate }}</p>
     </ion-text>
 
-    <ion-label>Password</ion-label>
+    <ion-label>{{ 'PASSWORD' | translate }}</ion-label>
     <ion-item lines="full">
-      <ion-input type="password" formControlName="password" required placeholder="enter your password"></ion-input>
+      <ion-input type="password" formControlName="password" required placeholder="Enter Password"></ion-input>
       <ion-icon name="eye" slot="end"></ion-icon>
     </ion-item>
     <ion-text class="ion-text-left" color="danger" *ngIf="!signupForm.get('password').valid && signupForm.get('password').touched">
-      <p class="error">Please enter a valid password</p>
+      <p class="error">{{ 'ENTER_VALID_PASSWORD' | translate }}</p>
     </ion-text>
 
-    <ion-label>Confirm Password</ion-label>
+    <ion-label>{{ 'CONFIRM_PASSWORD' | translate }}</ion-label>
     <ion-item lines="full">
-      <ion-input type="password" formControlName="confirmPassword" required placeholder="enter your confirm password"></ion-input>
+      <ion-input type="password" formControlName="confirmPassword" required placeholder="Confirm Password"></ion-input>
       <ion-icon name="eye" slot="end"></ion-icon>
     </ion-item>
     <ion-text class="ion-text-left" color="danger" *ngIf="!signupForm.get('confirmPassword').valid && signupForm.get('confirmPassword').touched">
-      <p class="error">Passwords do not match</p>
+      <p class="error">{{ 'PASSWORDS_DO_NOT_MATCH' | translate }}</p>
     </ion-text>
 
     <ion-grid class="signin-button-grid">
       <ion-row>
         <ion-col>
           <ion-button class="get-started-button" type="submit" [disabled]="!signupForm.valid">
-            <span>Sign Up</span>
+            <span> {{ 'SIGN_UP' | translate }}</span>
             <div class="lines"></div>
             <div>
               <ion-icon name="arrow-forward"></ion-icon>
@@ -88,11 +82,13 @@
       <ion-row>
         <ion-col size="2"></ion-col>
         <ion-col class="ion-text-center" routerLink="/login">
-          <ion-text class="account-text">Already have an account?</ion-text>
+          <ion-text class="account-text">
+            {{ 'ALREADY_HAVE_ACCOUNT' | translate }}
+            </ion-text>
           <ion-row>
             <ion-col size="2"></ion-col>
             <ion-col class="ion-text-center">
-              <ion-text class="signup-text">Sign In</ion-text>
+              <ion-text class="signup-text">{{ 'SIGN_IN' | translate }}</ion-text>
               <hr class="signup-hr" />
             </ion-col>
             <ion-col size="2"></ion-col>
