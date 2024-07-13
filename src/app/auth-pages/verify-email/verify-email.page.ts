@@ -12,6 +12,7 @@ export class VerifyEmailPage implements OnInit {
   otpDigits: string[] = ['', '', '', ''];
   signupForm: FormGroup;
   id: string;
+  otp:any;
   constructor(
     private activateRoute: ActivatedRoute,
     private apiService: ApiService,
@@ -49,19 +50,28 @@ export class VerifyEmailPage implements OnInit {
   }
 
   async verifyOTP() {
-    const otp = this.otpDigits.join('');
+ 
     
-    if (otp.length !== 3) {
-      this.messageService.presentToast('Please Enter Valid Otp', 'danger');
+    if (!this.otp) {
+      this.messageService.presentToast('Please Enter Otp', 'danger');
       
     } else {
-      // this.messageService.presentToast('Incorrect otp Otp', 'danger');
-      this.navigateResetPassword();
+      const data={
+        otp:this.otp
+      }
+        this.apiService.verifyOtp(data).subscribe((res:any)=>{
+          this.router.navigate([`/reset-password/${this.otp}`])
+        }),(err=>{
+          if(err.error.error==='Invalid OTP.'){
+            this.messageService.presentToast('Invalid Otp', 'danger');
+          }
+          this.messageService.presentToast('Some thing went Wrong try again ', 'danger');
+        })
+      
     }
   }
-
-  navigateResetPassword() {
-   this.router.navigate(['/reset-password'])
-    console.log('Navigating to reset password page');
+  onOtpChange(otp: string) {
+    this.otp = otp;
   }
+ 
 }

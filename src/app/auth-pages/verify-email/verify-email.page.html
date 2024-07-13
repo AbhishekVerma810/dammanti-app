@@ -61,11 +61,9 @@
   <form (ngSubmit)="verifyOTP()">
     <ion-grid class="signin-button-grid">
       <ion-row class="ion-justify-content-center ion-margin-top">
-        <ion-col size="2" *ngFor="let digit of otpDigits; let i = index">
-          <ion-input type="text" maxlength="1" class="otp-input" [(ngModel)]="otpDigits[i]" [name]="'otp-' + i"></ion-input>
-        </ion-col>
+        <ng-otp-input class="ng_otp_input" [(ngModel)]="otp" (onInputChange)="onOtpChange($event)"
+        [config]="{length:4}"></ng-otp-input>
       </ion-row>
-
       <ion-row class="ion-justify-content-center ion-margin-top">
         <ion-col size="auto">
           <ion-button fill="clear" class="resend-button">

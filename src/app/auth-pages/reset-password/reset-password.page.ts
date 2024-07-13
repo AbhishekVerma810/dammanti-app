@@ -11,18 +11,22 @@ import { MessageService } from '../../services/message.service';
 export class ResetPasswordPage implements OnInit {
   signupForm: FormGroup;
   id: string;
+  otp:any;
   constructor(
     private activateRoute: ActivatedRoute,
     private apiService: ApiService,
     private router: Router,
     private messageService: MessageService,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+
   ) {
     this.initForm();
+
   }
   ngOnInit() {
-    this.activateRoute.params.subscribe(params => {
-      this.id = params['id'];
+  this.activateRoute.params.subscribe(params => {
+      this.otp = params['id'];
+      console.log('hello abhi you otp',this.otp)
     });
   }
   initForm() {
@@ -38,11 +42,12 @@ export class ResetPasswordPage implements OnInit {
     const data = {
       new_password: this.signupForm.value.new_password,
       confirm_password: this.signupForm.value.confirm_password,
-      otp: '123456'
+      otp: this.otp
     }
     this.apiService.resetPassword(data).subscribe(
       res => {
         this.signupForm.reset();
+        this.messageService.presentToast('Password Updated successfully', 'danger');
         this.router.navigate(['/login']);
       },
       err => {

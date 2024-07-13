@@ -12,7 +12,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'welcome-screen',
+    redirectTo: '/apptabs/tabs/add-product',
     pathMatch: 'full'
   },
 
@@ -49,7 +49,7 @@ const routes: Routes = [
     loadChildren: () => import('./auth-pages/welcome-screen/welcome-screen.module').then( m => m.WelcomeScreenPageModule)
   },
   {
-    path: 'reset-password',
+    path: 'reset-password/:id',
     loadChildren: () => import('./auth-pages/reset-password/reset-password.module').then( m => m.ResetPasswordPageModule)
   },
   {

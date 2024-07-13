@@ -49,4 +49,8 @@ export class HomePage {
   navigateToSettings() {
     
   }
+  getProductAllProduct(){
+
+  }
+  
 }
