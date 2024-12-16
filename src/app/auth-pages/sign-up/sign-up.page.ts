@@ -15,6 +15,8 @@ export class SignUpPage implements OnInit {
   signupForm: FormGroup;
   center: { lat: any; lng: any; };
   formattedAddress:any;
+  isTypePassword: boolean = true;
+  isTypeConfirmPassword: boolean = true;
   constructor(
     private formBuilder: FormBuilder,
     private authService: ApiService,
@@ -40,7 +42,12 @@ export class SignUpPage implements OnInit {
       ? null : {'mismatch': true};
   }
 
-  
+  onChange() {
+    this.isTypePassword = !this.isTypePassword;
+  }
+  onChangeCofirmPassword() {
+    this.isTypeConfirmPassword = !this.isTypeConfirmPassword;
+  }
   async fetchFormattedAddress() {
     console.log('hello abhi12')
     try {

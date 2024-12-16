@@ -40,7 +40,12 @@ ion-content {
     }
   }
 
-
+  .Invoice-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 37px;
+  }
   ion-input,
   ion-select,
   ion-datetime,
@@ -190,5 +195,54 @@ ion-content {
       margin-left: 0;
       margin-right: 0;
     }
+  }
+  .input_warranty_start_date{
+    width: 30%;
+    height: 47px;
+    border: 2px solid darkgray;
+    border-radius: 18px;
+    padding: 13px;
+  }
+  .input_warranty_end_date{
+    width: 30%;
+    height: 47px;
+    border: 2px solid darkgray;
+    border-radius: 18px;
+    padding: 13px;
+  }
+input[type="date"]::before {
+	color: #999999;
+	content: attr(placeholder);
+}
+// input[type="date"] {
+//     width: 80vw;
+//     height: 47px;
+//     border: 2px solid darkgray;
+//     border-radius: 18px;
+//     padding: 13px;
+//     // margin-top: 34px;
+// }
+input[type="date"]:focus,
+input[type="date"]:valid {
+    width: 80vw;
+    height: 45px;
+    border: 2px solid darkgray;
+    border-radius: 18px;
+    color: black;
+}
+input[type="date"]:placeholder {
+    color: red;
+  }
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+	content: "" !important;
+}
+.date_style{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  
   }
 }

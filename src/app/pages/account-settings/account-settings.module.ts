@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HealpAndSupportPageRoutingModule } from './healp-and-support-routing.module';
+import { AccountSettingsPageRoutingModule } from './account-settings-routing.module';
 
-import { HealpAndSupportPage } from './healp-and-support.page';
+import { AccountSettingsPage } from './account-settings.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HealpAndSupportPageRoutingModule
+    AccountSettingsPageRoutingModule
   ],
-  declarations: [HealpAndSupportPage]
+  declarations: [AccountSettingsPage]
 })
-export class HealpAndSupportPageModule {}
+export class AccountSettingsPageModule {}

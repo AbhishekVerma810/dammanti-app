@@ -1,10 +1,10 @@
 <ion-content>
   <ion-img src="assets/objects@2x.png" alt=""></ion-img>
-  <h3> Select Language</h3>
-  <ion-button expand="block"> English</ion-button>
-  <ion-button expand="block">Arabic ( عربي )</ion-button>
+  <h3>{{ 'SELECT_LANGUAGE' | translate }}</h3>
+  <ion-button expand="block"  (click)="switchLanguage('en')"> {{ 'ENGLISH' | translate }}</ion-button>
+  <ion-button expand="block"  (click)="switchLanguage('ar')">{{ 'ARABIC' | translate }}</ion-button>
   <ion-button class="continue-button" routerLink="/login">
-        <span>Continue</span>
+        <span>{{ 'CONTINUE' | translate }}</span>
         <div class="lines"></div>
         <div>
         <ion-icon name="arrow-forward"></ion-icon>

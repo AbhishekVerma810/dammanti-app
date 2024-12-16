@@ -1,4 +1,4 @@
-<ion-header class="ion-padding ion-no-border" style="border-bottom: 2px solid #000000;">
+<!-- <ion-header class="ion-padding ion-no-border" style="border-bottom: 2px solid #000000;">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
@@ -6,22 +6,27 @@
     <ion-title class="ion-text-center">Add Product</ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-content class="ion-padding">
-  <form>
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
     <ion-item-group>
       <ion-item lines="none">
         <h3>Product Details</h3>
       </ion-item>
       <ion-item lines="none">
         <ion-label position="stacked">Product Name <ion-text color="danger">*</ion-text></ion-label>
-        <ion-input placeholder="Washing Machine"></ion-input>
+        <ion-input formControlName="product_name" placeholder="Washing Machine"></ion-input>
       </ion-item>
+
       <ion-item lines="none">
         <ion-label position="stacked">Category <ion-text color="danger">*</ion-text></ion-label>
-        <ion-select placeholder="Appliances">
-          <ion-select-option value="appliances">Appliances</ion-select-option>
+        <ion-select formControlName="category_id" placeholder="Select Category">
+          <ion-select-option *ngFor="let category of categories" [value]="category.id.toString()">
+            {{ category.name }}
+          </ion-select-option>
         </ion-select>
       </ion-item>
+
       <div>
         <ion-item lines="none">
           <div class="image-upload-container">
@@ -34,105 +39,326 @@
           </div>
           <div style="display: flex;">
             <div style="margin-right: 10px;">
-
               <ion-label position="stacked">Product Image</ion-label>
-
-              <ion-button fill="clear">
-                <ion-icon style="font-size: 25px;color:  #929CC2;" slot="start" name="camera-outline"></ion-icon>
+              <ion-button fill="clear" formControlName="product_picture">
+                <ion-icon style="font-size: 25px; color: #929CC2;" slot="start" name="camera-outline"></ion-icon>
               </ion-button>
               <ion-button fill="clear">
-                <ion-icon style="font-size: 25px;color:  #929CC2;" slot="start" name="cloud-upload-outline"></ion-icon>
+                <ion-icon style="font-size: 25px; color: #929CC2;" slot="start" name="cloud-upload-outline"></ion-icon>
               </ion-button>
-
             </div>
             <div>
               <ion-label position="stacked">Invoice Copy </ion-label>
-              <ion-button fill="clear">
-                <ion-icon style="font-size: 25px;color:#929CC2;" slot="start" name="camera-outline"></ion-icon>
+              <ion-button fill="clear" formControlName="invoice">
+                <ion-icon style="font-size: 25px; color: #929CC2;" slot="start" name="camera-outline"></ion-icon>
               </ion-button>
               <ion-button fill="clear">
-                <ion-icon style="font-size: 25px;color:#929CC2;" slot="start" name="cloud-upload-outline"></ion-icon>
+                <ion-icon style="font-size: 25px; color: #929CC2;" slot="start" name="cloud-upload-outline"></ion-icon>
               </ion-button>
             </div>
           </div>
         </ion-item>
       </div>
+
       <ion-item lines="none">
         <ion-label position="stacked">Purchase Date</ion-label>
-        <ion-input placeholder="Washing Machine"></ion-input>
+        <ion-input formControlName="purchase_date" placeholder="MM/DD/YYYY"></ion-input>
       </ion-item>
     </ion-item-group>
+
     <ion-item-group>
       <ion-item>
         <h3>Warranty Details</h3>
       </ion-item>
       <ion-item lines="none">
         <ion-label position="stacked">Warranty Period <ion-text color="danger">*</ion-text></ion-label>
-        <ion-select placeholder="6 Months">
+        <ion-select formControlName="warrantyPeriod" placeholder="6 Months">
           <ion-select-option value="6">6 Months</ion-select-option>
           <ion-select-option value="12">12 Months</ion-select-option>
         </ion-select>
       </ion-item>
-      <div style="display: flex ; justify-content:space-around">
+      <div style="display: flex; justify-content: space-around;">
         <div style="width: 43%;">
           <ion-label position="stacked">Warranty Start Date</ion-label>
-          <ion-input placeholder="Washing Machine"></ion-input>
+          <ion-input formControlName="warranty_start_date" placeholder="MM/DD/YYYY"></ion-input>
         </div>
         <div style="width: 43%;">
           <ion-label position="stacked">Warranty End Date</ion-label>
-          <ion-input placeholder="Washing Machine"></ion-input>
+          <ion-input formControlName="warranty_end_date" placeholder="MM/DD/YYYY"></ion-input>
         </div>
       </div>
     </ion-item-group>
+
     <ion-item-group>
       <ion-item>
         <h3>Shop Details</h3>
       </ion-item>
-      <div  class="shop_details">
+      <div class="shop_details">
         <div>
-      <div class="image-shop">
-        <ion-icon name="image-outline"></ion-icon>
-      </div>
-      <div  class="product_image">
-
-        <ion-label position="stacked">Shop Picture</ion-label>
-
-        <ion-button fill="clear">
-          <ion-icon  slot="start" name="camera-outline"></ion-icon>
-        </ion-button>
-        <ion-button fill="clear">
-          <ion-icon  slot="start" name="cloud-upload-outline"></ion-icon>
-        </ion-button>
-
-      </div>
-    </div>
-    <div>
-        <div class="input_box">
-          <ion-label position="stacked">Shop Name <ion-text color="danger">*</ion-text></ion-label>
-          <ion-input placeholder="Electrical appliances Co."></ion-input>
+          <div class="image-shop">
+            <ion-icon name="image-outline"></ion-icon>
+          </div>
+          <div class="product_image">
+            <ion-label position="stacked">Shop Picture</ion-label>
+            <ion-button fill="clear" formControlName="shop_picture">
+              <ion-icon slot="start" name="camera-outline"></ion-icon>
+            </ion-button>
+            <ion-button fill="clear">
+              <ion-icon slot="start" name="cloud-upload-outline"></ion-icon>
+            </ion-button>
+          </div>
         </div>
-        <div class="input_box">
-          <ion-label position="stacked">Contact Person Name</ion-label>
-          <ion-input placeholder="Mr. Ali"></ion-input>
+        <div>
+          <div class="input_box">
+            <ion-label position="stacked">Shop Name <ion-text color="danger">*</ion-text></ion-label>
+            <ion-input formControlName="shopName" placeholder="Electrical appliances Co."></ion-input>
+          </div>
+          <div class="input_box">
+            <ion-label position="stacked">Contact Person Name</ion-label>
+            <ion-input formControlName="warranty_provider_name " placeholder="Mr. Ali"></ion-input>
+          </div>
         </div>
       </div>
+      <ion-item lines="none">
+        <ion-label position="stacked">Contact No.</ion-label>
+        <ion-input type="tel" formControlName="warranty_contact_person_number" placeholder="1234567890"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label position="stacked">Shop Location</ion-label>
+        <ion-input formControlName="shop_location" placeholder="Select Location"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label position="stacked">Notes</ion-label>
+        <ion-textarea formControlName="notes" placeholder="ABCDEFGHIJKLMNO"></ion-textarea>
+      </ion-item>
+    </ion-item-group>
+
+    <div class="submit-button-container">
+      <ion-button type="submit" class="submit-button">Save</ion-button>
     </div>
+  </form>
+</ion-content>
+<ion-footer style="height: 50px;"></ion-footer> -->
+<ion-header class="ion-padding ion-no-border" style="border-bottom: 2px solid #000000;">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Add Product</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <ion-item-group>
+      <ion-item lines="none">
+        <h3>Product Details</h3>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label position="stacked">Product Name <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input formControlName="product_name" placeholder="Washing Machine"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label position="stacked">Category <ion-text color="danger">*</ion-text></ion-label>
+        <ion-select formControlName="category_id" placeholder="Select Category">
+          <ion-select-option *ngFor="let category of categories" [value]="category.id.toString()">
+            {{ category.name }}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <!-- <div>
         <ion-item lines="none">
-          <ion-label position="stacked">Contact No.</ion-label>
-          <ion-input type="tel" placeholder="1234567890"></ion-input>
+          <div class="image-upload-container">
+            <div *ngIf="productPictureUrl">
+              <img [src]="productPictureUrl" alt="Product Image"
+                style="width: 100px; height: 100px; border-radius: 10px;">
+            </div>
+            <div *ngIf="!productPictureUrl" class="image-placeholder">
+              <ion-icon name="image-outline"></ion-icon>
+            </div>
+            <div *ngIf="invoiceUrl">
+              <img [src]="invoiceUrl" alt="Invoice" style="width: 100px; height: 100px; border-radius: 10px;">
+            </div>
+            <div *ngIf="!invoiceUrl" class="image-placeholder">
+              <ion-icon name="image-outline"></ion-icon>
+            </div>
+          </div>
+          <div style="display: flex;">
+            <div style="margin-right: 10px;">
+              <ion-label position="stacked">Product Image</ion-label>
+              <ion-button fill="clear" (click)="takePicture('product_picture')">
+                <ion-icon style="font-size: 25px; color: #929CC2;" slot="start" name="camera-outline"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear" (click)="triggerFileInput()">
+                <ion-icon style="font-size: 25px; color: #929CC2;" slot="start" name="cloud-upload-outline"></ion-icon>
+              </ion-button>
+              <input accept="image/*" hidden type="file" id="image-input"
+                (change)="onFileChange($event, 'product_picture')" />
+            </div>
+          </div>
+          
+          <ion-label position="stacked">Invoice Copy </ion-label>
+          <ion-button fill="clear" (click)="takePicture('invoice')">
+            <ion-icon style="font-size: 25px; color: #929CC2;" slot="start" name="camera-outline"></ion-icon>
+          </ion-button>
+
+          <ion-button fill="clear" (click)="triggerFileInvoiceInput()">
+            <ion-icon style="font-size: 25px; color: #929CC2;" slot="start" name="cloud-upload-outline"></ion-icon>
+          </ion-button>
+          <input accept="image/*" hidden type="file" id="image-input-invoice"
+            (change)="onFileChange($event, 'invoice')" />
+          <div>
+
+          </div>
         </ion-item>
+      </div> -->
+      <div>
         <ion-item lines="none">
-          <ion-label position="stacked">Shop Location</ion-label>
-          <ion-input placeholder="Select Location"></ion-input>
+
+          <div class="image-upload-container">
+            <div *ngIf="productPictureUrl" class="image-placeholder">
+              <img [src]="productPictureUrl" alt="Product Image"
+                style="width: 100px; height: 100px; border-radius: 10px;">
+            </div>
+            <div *ngIf="!productPictureUrl" class="image-placeholder">
+              <ion-icon name="image-outline"></ion-icon>
+            </div>
+            <div *ngIf="invoiceUrl" class="image-placeholder">
+              <img [src]="invoiceUrl" alt="Invoice" style="width: 100px; height: 100px; border-radius: 10px;">
+            </div>
+            <div *ngIf="!invoiceUrl" class="image-placeholder">
+              <ion-icon name="image-outline"></ion-icon>
+            </div>
+          </div>
+          <div style="display: flex;">
+            <div style="margin-right: 10px;">
+              <ion-label position="stacked">Product Image</ion-label>
+              <ion-button fill="clear" (click)="takePicture('product_picture')">
+                <ion-icon style="font-size: 25px; color: #929CC2;" slot="start" name="camera-outline"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear" (click)="triggerFileInput()">
+                <ion-icon style="font-size: 25px; color: #929CC2;" slot="start" name="cloud-upload-outline"></ion-icon>
+              </ion-button>
+              <input accept="image/*" hidden type="file" id="image-input"
+                (change)="onFileChange($event, 'product_picture')" />
+            </div>
+            <div>
+              <ion-label position="stacked">Invoice Copy </ion-label>
+              <ion-button fill="clear" (click)="takePicture('invoice')">
+                <ion-icon style="font-size: 25px; color: #929CC2;" slot="start" name="camera-outline"></ion-icon>
+              </ion-button>
+                <ion-button fill="clear" (click)="triggerFileInvoiceInput()">
+                <ion-icon style="font-size: 25px; color: #929CC2;" slot="start" name="cloud-upload-outline"></ion-icon>
+              </ion-button>
+              <input accept="image/*" hidden type="file" id="image-input-invoice"
+                (change)="onFileChange($event, 'invoice')" />
+
+            </div>
+          </div>
         </ion-item>
-        <ion-item lines="none">
+      </div>
+      <ion-item lines="none">
+        <ion-label position="stacked">Purchase Date</ion-label>
+        <ion-input 
+          formControlName="purchase_date" 
+          placeholder="MM/DD/YYYY"
+          (ionInput)="formatDate($event,'purchase_date')"
+          maxlength="10">
+        </ion-input>
+      </ion-item>
+    </ion-item-group>
+     <ion-item-group>
+      <ion-item>
+        <h3>Warranty Details</h3>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label position="stacked">Warranty Period <ion-text color="danger">*</ion-text></ion-label>
+        <ion-select formControlName="time_period" placeholder="6 Months">
+          <ion-select-option value="6">6 Months</ion-select-option>
+          <ion-select-option value="12">12 Months</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <div style="display: flex; justify-content: space-around;">
+        <div style="width: 43%;">
+          <ion-label position="stacked">Warranty Start Date</ion-label>
+          <!-- <ion-input formControlName="warranty_start_date" placeholder="MM/DD/YYYY"></ion-input> -->
+          <ion-input 
+          formControlName="warranty_start_date" 
+          placeholder="MM/DD/YYYY"
+          (ionInput)="formatDate($event,'warranty_start_date')"
+          maxlength="10">
+        </ion-input>
+        </div>
+        <div style="width: 43%;">
+          <ion-label position="stacked">Warranty End Date</ion-label>
+          <!-- <ion-input formControlName="warranty_end_date" placeholder="MM/DD/YYYY"></ion-input> -->
+          <ion-input 
+          formControlName="warranty_end_date" 
+          placeholder="MM/DD/YYYY"
+          (ionInput)="formatDate($event,'warranty_end_date')"
+          maxlength="10">
+        </ion-input>
+        </div>
+      </div>
+    </ion-item-group>
+
+    <ion-item-group>
+      <ion-item>
+        <h3>Shop Details</h3>
+      </ion-item>
+      <div class="shop_details">
+        <div>
+          <div class="image-shop" *ngIf="shopPictureUrl">
+            <img [src]="shopPictureUrl" alt="Shop Image" style="width: 100px; height: 100px;">
+          </div>
+          <div class="image-shop" *ngIf="!shopPictureUrl">
+            <ion-icon name="image-outline"></ion-icon>
+          </div>
+          <div class="product_image">
+            <ion-label position="stacked">Shop Picture</ion-label>
+            <ion-button fill="clear" (click)="takePicture('shop_picture')">
+              <ion-icon style="font-size: 25px; color: #929CC2;" slot="start" name="camera-outline"></ion-icon>
+
+            </ion-button>
+            <ion-button fill="clear" (click)="triggerFileShopInput()">
+              <ion-icon slot="start" name="cloud-upload-outline"></ion-icon>
+            </ion-button>
+            <input accept="image/*" hidden type="file" id="image-input-shop"
+              (change)="onFileChange($event, 'shop_picture')" />
+          </div>
+        </div>
+        <div>
+          <div class="input_box">
+            <ion-label position="stacked">Shop Name <ion-text color="danger">*</ion-text></ion-label>
+            <ion-input formControlName="shop_name" placeholder="e.g Kundan Electronics"></ion-input>
+          </div>
+          <div class="input_box">
+            <ion-label position="stacked">Shop Location <ion-text color="danger">*</ion-text></ion-label>
+            <ion-input formControlName="shop_location" placeholder="e.g Chawk Bazar"></ion-input>
+          </div>
+        </div>
+      </div>
+      <div style="margin: 3% 3% 3% 0%;">
+        <div class="input_box">
+          <ion-label position="stacked">Warranty Provider Name <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input formControlName="warranty_contact_person_name" placeholder="e.g Hifzu"></ion-input>
+        </div>
+        <div>
+          <ion-label position="stacked">Warranty Contact Person Number <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input formControlName="warranty_contact_person_number" placeholder="0300-1234567"></ion-input>
+        </div>
+        <div class="input_box">
           <ion-label position="stacked">Notes</ion-label>
-          <ion-textarea placeholder="ABCDEFGHIJKLMNO"></ion-textarea>
-        </ion-item>
+          <ion-textarea formControlName="notes" placeholder="Add additional notes here..."></ion-textarea>
+
+        </div>
+      </div>
     </ion-item-group>
     <div class="submit-button-container">
       <ion-button type="submit" class="submit-button">Save</ion-button>
     </div>
   </form>
 </ion-content>
-<ion-footer style="height: 50px;"></ion-footer>
+<footer style="height: 70px;"></footer>

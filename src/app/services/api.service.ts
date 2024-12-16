@@ -1,9 +1,8 @@
-
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { LoaderService } from './loader.service';
-import { catchError, throwError } from 'rxjs';
+import { catchError, Observable, throwError } from 'rxjs';
 import { Browser } from '@capacitor/browser';
 @Injectable({
   providedIn: 'root',
@@ -32,19 +31,40 @@ export class ApiService {
 
 
   forgotPassword(data: any) {
-    return this.http.post(`${environment.baseUrl}/api/user/forget/password`, data);
+    return this.http.post(`${environment.baseUrl}/api/auth/forget-password`, data);
+  }
+  resetPassword(data: any) {
+    return this.http.post(`${environment.baseUrl}/api/auth/reset/password`, data);
   }
   forgotPasswordWitOtp(data) {
     return this.http.post(`${environment.baseUrl}/api/user/reset/password`, data);
   }
+  verifyOtp(data) {
+    return this.http.post('http://localhost:3000/api/auth/verify-email', data);
+  }
   signup(data) {
     return this.http.post(`${environment.baseUrl}/api/auth/signup`, data)
   }
+  addProduct(data){
+    return this.postApi('/api/product/create', data);
+  }
+  getCategory(){
+    return this.getApi('/api/category/all');
+  }
+  addCategory(data){
+    return this.postApi('/api/category/add', data);
+  }
+  // getProductDetail(id:any){
+  //   return this.getApi(`/api/product/details/${id}`);
+  // }
+  getProductDetail(id: any): Observable<any> {
+    return this.getApi(`/api/product/details/${id}`);
+  }
+  
   getHttpHeaders() {
     const data = JSON.parse(localStorage.getItem('user_data'));
-    // const token = data?.user.token;
-    if (data?.user) {
-      this.token = data?.user.token;
+    if (data?.data) {
+      this.token = data?.data.token;
     } else if (data) {
       this.token = data?.token;
     }
@@ -74,5 +94,3 @@ export class ApiService {
     return this.http.post(`${environment.baseUrl}${url}`, {}, this.getHttpHeaders());
   }
 }
-
-

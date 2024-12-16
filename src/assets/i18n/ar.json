@@ -55,5 +55,15 @@
   "NEW_PASSWORD_MUST_BE_DIFFERENT": "يجب أن تكون كلمة المرور الجديدة مختلفة",
   "FROM_PREVIOUS_PASSWORD": "عن كلمة المرور المستخدمة سابقًا",
   "NEW_PASSWORD": "كلمة المرور الجديدة",
-  "SAVE": "حفظ"
+  "SAVE": "حفظ",
+  "ENTER_YOUR_EMAIL": "أدخل بريدك الإلكتروني",
+  "ENTER_PROPER_EMAIL": "*يرجى إدخال عنوان بريد إلكتروني صحيح",
+  "ENTER_NAME": "يرجى إدخال اسمك",
+  "ENTER_CITY_COUNTRY": "يرجى إدخال مدينتك وبلدك",
+  "ENTER_VALID_PASSWORD": "يرجى إدخال كلمة مرور صحيحة",
+  "ENTER_VALID_EMAIL": "يرجى إدخال عنوان بريد إلكتروني صالح",
+  "PASSWORDS_DO_NOT_MATCH": "كلمات المرور غير متطابقة",
+  "ENTER_EMAIL_VERIFICATION_CODE": "يرجى إدخال عنوان بريدك الإلكتروني لتلقي رمز التحقق",
+  "GENDER": "الجنس",
+  "SELECT": "اختر"
 }
